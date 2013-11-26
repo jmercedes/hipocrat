@@ -10,6 +10,6 @@ module ApplicationHelper
     presenter.last_css = ""
     presenter.max_depth = 0 # prevents dropdown menus, which don't render correctly
     presenter
-  end
+  end  
 
 end
