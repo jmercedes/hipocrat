@@ -218,7 +218,7 @@ a:hover {
 }
 
 .brand {
-  margin-top: 15px;
+  margin-top: 0px;
 }
 
 .navbar .nav > li > a {
@@ -1401,3 +1401,17 @@ p.lead {
 #body_background {
 	background-color:#F4FDED;
 }
+
+#logo_background {
+	background-color:#FFFFFF;
+	width:245px;
+	height:140px;
+	border-radius: 0 0 5px 5px;
+	-moz-border-radius: 0 0 5px 5px;
+	-webkit-border-radius: 0 0 5px 5px;
+	
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+	z-index: 1000;
+}
+
+	

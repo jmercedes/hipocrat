@@ -35,18 +35,21 @@
 </head>
 
 <body>
+
+
+	<div id="logo_background" class="animated fadeInDownBig">
+			<a class="brand" href="index.html"><%= image_tag("logo_cmpc.png") %></a>
+	</div>
+
+
 	
 	<div class="navbar navbar-inverse navbar-fixed-top">
-    <div class="navbar-inner">
-      <div class="container">
+				<%= render "/refinery/header" -%>
         <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </a>
-					<%= render "/refinery/header" -%>
-      </div>
-    </div>
   </div>
   
         
