@@ -1,0 +1,34 @@
+  <!--Clients Section-->
+  <section id="team">
+    <div class="container">
+      
+      <div class="row-fluid">
+        <div class="span12">
+          <h2><%= @page.title %></h2>
+        </div>
+      </div>
+      
+      <div class="row-fluid">
+        
+        <!--Team Member One-->
+			  <% @page.children.each do |child| %>
+        <div class="span3">
+					<%= raw child.content_for(:pic) %>
+          <div class="title-box text-center">
+						<% name_position = child.title.split("|") %>
+            <p><%= link_to name_position[0], child.url %><br>
+			      <span class="dark-gray"><em><%= name_position[1] %></em></span></p>
+          </div>
+					<div class="bio_desc">
+						<%= raw truncate child.content_for(:body), :length => 100,
+						 																					 :omission => "...",
+						 																					 :preserve_html_tags => true %>
+						<p><%= link_to "Leer más ...", child.url %><p>
+  				</div>
+        </div>
+			  <% end %> 
+        
+        
+      </div>
+    </div>
+  </section>

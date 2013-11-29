@@ -214,7 +214,7 @@ a:hover {
 
 .navbar-inverse .nav .active > a, .navbar-inverse .nav .active > a:hover, .navbar-inverse .nav .active > a:focus {
   background-color: transparent;
-  color: rgba(49,54,58,0.9);
+  color:#7AC043;
 }
 
 .brand {
@@ -1403,6 +1403,8 @@ p.lead {
 }
 
 #logo_background {
+	position: absolute;
+	z-index: 1001;
 	background-color:#FFFFFF;
 	width:245px;
 	height:140px;
@@ -1411,7 +1413,11 @@ p.lead {
 	-webkit-border-radius: 0 0 5px 5px;
 	
 	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-	z-index: 1000;
+	margin-left:20px;
+}
+
+.navbar {
+	margin-bottom:2px !important;
 }
 
 	
