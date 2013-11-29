@@ -480,9 +480,11 @@ a:hover {
 
 
 
-/* ==========================================================================
+
+/* =============== CODE REQUIRES TO BE CORRECTED ============================
    About Page Styles
-   ========================================================================== */
+   ==========================================================================
+
 .progress {
   background-color: #dfe5e8;
   background-image: linear-gradient(to bottom, #dfe5e8, #dfe5e8);
@@ -562,7 +564,10 @@ a:hover {
 
 }
 
-/* Animated Progress Bar onload */
+ =============================
+ Animated Progress Bar onload
+ ============================
+
 .bar-one       { width:100%;  -moz-animation:bar-one 1.0s ease-out;       -webkit-animation:bar-one 1.0s ease-out;        }
 .bar-two        { width:100%;  -moz-animation:bar-two 1.7s ease-out;        -webkit-animation:bar-two 1.7s ease-out;         }
 .bar-three      { width:100%; -moz-animation:bar-three 2.3s ease-out;   -webkit-animation:bar-three 2.3s ease-out;      }
@@ -577,18 +582,21 @@ a:hover {
 
 
 
-/* Animated Fade in for Field Values */
+    =====================================
+	Animated Fade in for Field Values
+	=====================================
+	
 @-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
 @-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
 @keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
  
 .fade-in {
-    opacity:0;  /* make things invisible upon start */
-    -webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+    opacity:0;   ===== make things invisible upon start ====
+    -webkit-animation:fadeIn ease-in 1;  === call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time ===
     -moz-animation:fadeIn ease-in 1;
     animation:fadeIn ease-in 1;
  
-    -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+    -webkit-animation-fill-mode:forwards;  === this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)  ===
     -moz-animation-fill-mode:forwards;
     animation-fill-mode:forwards;
  
@@ -612,6 +620,7 @@ a:hover {
 }
 
 
+ */
 
 /* ==========================================================================
    Team Member Styles
