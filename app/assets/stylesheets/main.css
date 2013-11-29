@@ -1090,24 +1090,42 @@ ul#twitter_update_list li {
 }
 
 
+/* ==========================================================================
+   page text support.
+   ========================================================================== */
+
+
+
 
 /* ==========================================================================
    Bottom and Footer styles
    ========================================================================== */
 #bottom {
-  background: #31363A;
-  padding-top: 120px;
-  padding-bottom: 120px;
+  background: #7AC043;
+  padding-top: 60px;
+  padding-bottom: 30px;
+}
+
+#bottom p {
+	color:#FFFFFF;	
 }
 
 #bottom p a {
-  color: #A5B2B9;
+  color: #FFFFFF;
 }
 
 #bottom p a:hover {
   color: #ff755a;
 	text-decoration: none;
 }
+
+#bottom hr {
+  border: 0;
+  height: 0;
+  border-top: 1px solid #FFFFFF;
+}
+
+
 
 hr {
   border: 0;
@@ -1140,13 +1158,13 @@ ul.social-icons li a:hover {
 }
 
 #footer {
-  background: #26292B;
+  background: #0088CC;
   padding-top: 20px;
   padding-bottom: 20px;
 }
 
 #footer p {
-  color: #626C72;
+  color: #FFFFFF;
   font-size: 11px;
 }
 
@@ -1361,3 +1379,16 @@ p.lead {
 
 }   
 
+/* Special Styles */
+
+.body_h1 {
+	font-size:3em;
+	color:#0088CC;
+	margin-top:20px;
+	margin-bottom:20px;
+	
+}
+
+#body_background {
+	background-color:#F4FDED;
+}

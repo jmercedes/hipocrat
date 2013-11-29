@@ -35,23 +35,22 @@
 </head>
 
 <body>
-        
-    <div class="navbar navbar-inverse navbar-fixed-top">
-
-      <div class="navbar-inner">
-        <div class="container">
-          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </a>
-          <div class="nav-collapse collapse">
-          </div><!--/.nav-collapse -->
-        </div>
+	
+	<div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="navbar-inner">
+      <div class="container">
+        <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </a>
+					<%= render "/refinery/header" -%>
       </div>
-			<%= render "/refinery/header" -%>
-
     </div>
+  </div>
+  
+        
+
   
  		<%= yield %>
     
