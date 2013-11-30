@@ -1,34 +1,51 @@
-  <!--Clients Section-->
-  <section id="team">
-    <div class="container">
-      
-      <div class="row-fluid">
-        <div class="span12">
-          <h2><%= @page.title %></h2>
-        </div>
-      </div>
-      
-      <div class="row-fluid">
-        
-        <!--Team Member One-->
-			  <% @page.children.each do |child| %>
-        <div class="span3">
-					<%= raw child.content_for(:pic) %>
-          <div class="title-box text-center">
-						<% name_position = child.title.split("|") %>
-            <p><%= link_to name_position[0], child.url %><br>
-			      <span class="dark-gray"><em><%= name_position[1] %></em></span></p>
-          </div>
-					<div class="bio_desc">
-						<%= raw truncate child.content_for(:body), :length => 100,
-						 																					 :omission => "...",
-						 																					 :preserve_html_tags => true %>
-						<p><%= link_to "Leer más ...", child.url %><p>
-  				</div>
-        </div>
-			  <% end %> 
-        
-        
+<section id="page-title">
+  <div class="container">
+    <div class="row">
+      <div class="span12 text-center">
+        <h3><%= @page.title %></h3>
       </div>
     </div>
-  </section>
+  </div>
+</section>
+
+
+<!--Work-->
+<section id="content2">
+  <div class="container text-center">          
+      
+      <div class="row margin-40">
+	
+	
+				<% @page.children.each do |child| %>
+
+			  
+    		
+    		<!--Project Thumbnail One-->
+    		<div class="span4">
+    			<div class="thumbs">
+						<%= raw child.content_for(:pic) %>
+    			</div>
+    			
+				  
+
+    			<div class="project-title margin-30">
+    		    <h4><% name_position = child.title.split("|") %><%= link_to name_position[0], child.url %></h4>
+							<p class="lead"><%= raw truncate strip_tags(child.content_for(:body)),
+							 																									length: 65,
+																																separator: ' ',
+				                                                				:omission => "...",
+																																:preserve_html_tags => false %></p>
+						<p><%= link_to "Leer más ...", child.url %><p>
+
+    		  </div>
+    		</div>
+
+				<% end %> 
+
+    		
+    			
+    		
+    		
+      
+  </div>
+</section>          
