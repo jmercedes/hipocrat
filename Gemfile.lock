@@ -61,7 +61,6 @@ GEM
       orm_adapter (~> 0.1)
       railties (~> 3.1)
       warden (~> 1.2.1)
-    dotenv (0.9.0)
     dragonfly (0.9.15)
       multi_json (~> 1.0)
       rack
@@ -82,9 +81,6 @@ GEM
       ruby-hmac
     font-awesome-rails (3.2.1.1)
       railties (>= 3.2, < 5.0)
-    foreman (0.63.0)
-      dotenv (>= 0.7)
-      thor (>= 0.13.6)
     formatador (0.2.4)
     friendly_id (4.0.10.1)
       activerecord (>= 3.0, < 4.0)
@@ -245,10 +241,8 @@ DEPENDENCIES
   bootstrap-sass
   carrierwave
   coffee-rails (~> 3.2.1)
-  erubis
   fog
   font-awesome-rails
-  foreman
   globalize3 (= 0.3.0)
   jquery-rails
   pg

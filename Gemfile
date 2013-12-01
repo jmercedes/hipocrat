@@ -7,8 +7,6 @@ gem 'rails', '3.2.14'
 
 group :development, :test do
   gem 'pg'
-  gem 'foreman'
-  gem 'erubis'
 end
 
 group :production do
