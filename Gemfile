@@ -7,6 +7,9 @@ gem 'rails', '3.2.14'
 
 group :development, :test do
   gem 'pg'
+  gem 'foreman'
+  gem 'erubis'
+  gem 'heroku'
 end
 
 group :production do
@@ -61,3 +64,4 @@ gem 'refinerycms-news', '~> 2.1.0'
 
 gem 'fog'
 gem 'carrierwave'
+gem 'thin'

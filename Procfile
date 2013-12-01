@@ -1,0 +1,1 @@
+web: bundle exec rails server thin start -R config.ru -p $PORT -e $RACK_ENV/$RAILS_ENV
