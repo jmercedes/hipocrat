@@ -9,7 +9,6 @@ group :development, :test do
   gem 'pg'
   gem 'foreman'
   gem 'erubis'
-  gem 'heroku'
 end
 
 group :production do
