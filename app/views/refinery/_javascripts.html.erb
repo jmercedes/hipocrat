@@ -15,3 +15,12 @@
 
 <%= javascript_include_tag 'application' %>
 <%= yield :javascripts -%>
+
+<script>
+  !function ($) {
+    $(function(){
+      $('#header').carousel()
+    })
+  }(window.jQuery)
+</script>
+
