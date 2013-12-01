@@ -30,11 +30,15 @@
 
     			<div class="project-title margin-30">
     		    <h4><% name_position = child.title.split("|") %><%= link_to name_position[0], child.url %></h4>
-							<p class="lead"><%= raw truncate strip_tags(child.content_for(:body)),
-							 																									length: 65,
-																																separator: ' ',
-				                                                				:omission => "...",
-																																:preserve_html_tags => false %></p>
+							<% service_image = Nokogiri::HTML(child.content_for(:body)) %>
+							<%= raw service_image.css('img') %>
+							
+							<p><%= raw truncate strip_tags(child.content_for(:body)),
+																																				
+																																				length: 125,
+							 																													separator: ' ',
+																																				omission: '...',
+																																				preserve_html_tags: false %></p>
 						<p><%= link_to "Leer más ...", child.url %><p>
 
     		  </div>

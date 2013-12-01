@@ -245,6 +245,7 @@ DEPENDENCIES
   font-awesome-rails
   globalize3 (= 0.3.0)
   jquery-rails
+  nokogiri
   pg
   rails (= 3.2.14)
   refinerycms (~> 2.1.0)
