@@ -1,15 +1,13 @@
 module ApplicationHelper
 
-  def navigation_menu
-    presenter = Refinery::Pages::MenuPresenter.new(refinery_menu_pages, self)
-    presenter.css = "navbar-inner"
-    presenter.menu_tag = :div
-    presenter.list_tag_css = "nav pull-right"
-    presenter.selected_css = "active"
-    presenter.first_css = ""
-    presenter.last_css = ""
-    presenter.max_depth = 0 # prevents dropdown menus, which don't render correctly
-    presenter
-  end  
+  def menu_header
+      menu_items = Refinery::Menu.new(Refinery::Page.menu_pages)
+
+      presenter = Refinery::Pages::MenuPresenter.new(menu_items, self)
+      presenter.first_css = nil
+      presenter.last_css = nil
+
+      presenter
+  end
 
 end
