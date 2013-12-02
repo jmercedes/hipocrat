@@ -16,9 +16,10 @@ module Refinery
                       :list_item__css, :link_dropdown_options, :carret
 
       self.dom_id = :div
-      self.css = ["nav-collapse", "collapse", "navbar-responsive-collapse"]
+      self.css = ["nav-collapse", "collapse"]
       self.menu_tag = :nav
       self.list_tag = :ul
+      self.list_tag_css = ["nav", "pull-right"]
       self.list_first_css = :nav
       self.carret = '<b class="caret"></b>'
       self.list_dropdown_css = "dropdown-menu"
