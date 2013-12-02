@@ -26,7 +26,7 @@ module Refinery
       self.list_item_tag = :li
       self.list_item_dropdown_css = :dropdown
       self.list_item__css = nil
-      self.selected_css = :active
+      self.selected_css = "active"
       self.first_css = :first
       self.last_css = :last
       def roots
