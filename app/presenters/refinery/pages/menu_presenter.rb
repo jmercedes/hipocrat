@@ -19,7 +19,7 @@ module Refinery
       self.css = ["nav-collapse", "collapse"]
       self.menu_tag = :nav
       self.list_tag = :ul
-      self.list_first_css = "nav navbar-nav"
+      self.list_first_css = "nav pull-right"
       self.carret = '<b class="caret"></b>'
       self.list_dropdown_css = "dropdown-menu"
       self.link_dropdown_options = {class: "dropdown-toggle", :data => {:toggle=>"dropdown"} }
