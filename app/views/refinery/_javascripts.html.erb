@@ -12,6 +12,7 @@
   <% Refinery.deprecate "content_for :after_javascript_libraries", :when => '2.2', :replacement => "content_for :javascripts" %>
   <% content_for :javascripts, yield(:after_javascript_libraries) %>
 <% end %>
+ 
 
 <%= javascript_include_tag 'application' %>
 <%= yield :javascripts -%>
@@ -23,4 +24,3 @@
     })
   }(window.jQuery)
 </script>
-
