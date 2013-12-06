@@ -40,7 +40,7 @@ h3 {
   font-weight: 300;
   letter-spacing: -1px;
   line-height: 34px;
-  color: #626c72;
+  color: #0088CC;
 }
 
 h4 {
@@ -219,6 +219,7 @@ a:hover {
 
 .brand {
   margin-top: 0px;
+  margin-left:10px;
 }
 
 .navbar .nav > li > a {
@@ -231,7 +232,7 @@ a:hover {
 }
 
 .navbar .nav > li > a:hover {
-  color: rgba(49,54,58,0.9);
+  color: rgba(110,192,67,0.9);
 }
 
 .navbar-inverse .nav li.dropdown > .dropdown-toggle .caret {
@@ -1139,8 +1140,7 @@ ul#twitter_update_list li {
 hr {
   border: 0;
   height: 0;
-  border-top: 1px solid #26292B;
-  border-bottom: 1px solid rgba(97,102,104,0.85);
+  border-top: 1px solid #a5b2b9;
 }
 
 ul.social-icons {
