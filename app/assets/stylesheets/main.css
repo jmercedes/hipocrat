@@ -45,14 +45,14 @@ h3 {
 
 h4 {
   letter-spacing: -1px;
-  color: #31363a;
+  color: #7AC043;
 }
 
 p {
   font-size: 16px;
   line-height: 24px;
   font-weight: 300;
-  color: #a5b2b9;
+  color: #4D5960;
 }
 
 p.lead {
@@ -105,7 +105,7 @@ a:hover {
 }
 
 ::selection {
-	background: #ff755a; /* Safari */
+	background:#7AC043; /* Safari */
 	color: #FFFFFF;
 }
 ::-moz-selection {
@@ -1420,4 +1420,6 @@ p.lead {
 	margin-bottom:2px !important;
 }
 
-	
+.green{
+	color:#7AC043;
+}	
