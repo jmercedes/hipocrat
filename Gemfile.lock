@@ -1,3 +1,12 @@
+GIT
+  remote: git://github.com/refinery/refinerycms-inquiries.git
+  revision: 2733f058cb86c713486e347ee2e8959c90452f8f
+  specs:
+    refinerycms-inquiries (2.1.0)
+      filters_spam (~> 0.2)
+      refinerycms-core (>= 2.1.0)
+      refinerycms-settings (>= 2.1.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -257,6 +266,7 @@ DEPENDENCIES
   refinerycms (~> 2.1.0)
   refinerycms-acts-as-indexed (~> 1.0.0)
   refinerycms-blog (~> 2.1.0)
+  refinerycms-inquiries!
   refinerycms-news (~> 2.1.0)
   sass-rails (~> 3.2.3)
   thin

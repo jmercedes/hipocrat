@@ -1,20 +1,55 @@
-<% content_for :body_content_title, @item.title %>
-<% content_for :body do %>
-  <article class="news_item">
-    <p>
-      <small><%= t('.published') %> <%= l(@item.publish_date, :format => :long) %></small>
-    </p>
-    <% if @item.source.present? %>
-      <p>
-        <small><%= t('.source') %> <%= @item.source %></small>
-      </p>
-    <% end %>
-    <%= @item.body.html_safe %>
-    <p>
-      <%= link_to t('.back_to_index'), refinery.news_items_path %>
-    </p>
-  </article>
-<% end %>
-<% content_for :side_body, render(:partial => 'recent_posts') %>
+<section id="page-title">
+  <div class="container">
+    <div class="row">
+      <div class="span12 text-center">
+        <h3><%= @page.title %></h3>
+      </div>
+    </div>
+  </div>
+</section>
 
-<%= render "/refinery/content_page" %>
+
+<!--Content-->      
+<section id="content2">
+  <div class="container">
+    <div class="row">
+      
+      <!--Column One-->
+      <div class="span8">
+	
+				
+        
+        <!--Blog Post-->
+        <article class="blog-post margin-60">
+         <small><%= t('.published') %> <%= l(@item.publish_date, :format => :short) %></small>
+          <h3><%= @item.title %></h3>
+          <p><%= @item.body.html_safe %></p><br />
+					<p><%= link_to t('.back_to_index'), refinery.news_items_path, class: "btn-main" %></p>
+          
+          <span class='st_facebook_hcount' displayText='Facebook'></span>
+          <span class='st_twitter_hcount' displayText='Tweet'></span>
+          <span class='st_linkedin_hcount' displayText='LinkedIn'></span>
+          <span class='st_pinterest_hcount' displayText='Pinterest'></span>
+        </article>
+        
+
+
+
+        
+      </div><!--End Column One-->
+      
+      <!--Side Bar-->
+      <div class="span4">
+        <% content_for :side_body, render(:partial => 'recent_posts') %>
+
+				<%= render "/refinery/content_page" %>
+				
+                      
+      </div>
+      
+    </div><!--End Row-->
+             
+  </div>
+</section>
+
+

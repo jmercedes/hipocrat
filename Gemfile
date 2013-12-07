@@ -54,7 +54,7 @@ gem 'refinerycms', '~> 2.1.0'
 # Optionally, specify additional Refinery CMS Extensions here:
 gem 'refinerycms-acts-as-indexed', '~> 1.0.0'
 gem 'refinerycms-blog', '~> 2.1.0'
-#gem 'refinerycms-inquiries', '~> 2.1.0'
+gem 'refinerycms-inquiries', :git => 'git://github.com/refinery/refinerycms-inquiries.git'
 gem 'refinerycms-news', '~> 2.1.0'
 
 #  gem 'refinerycms-search', '~> 2.1.0'

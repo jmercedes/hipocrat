@@ -1,0 +1,76 @@
+<!--Content-->
+<section id="page-title">
+  <div class="container">
+    <div class="row">
+      <div class="span12 text-center">
+        <h3><%= @page.title %></h3>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--Content-->      
+<section id="content2">
+  <div class="container">
+    <div class="row-fluid">
+	
+			<% content_for :body do %>
+			  <%= raw @page.content_for(Refinery::Pages.default_parts.first.to_sym) if Refinery::Pages.default_parts.any? %>
+
+			    <%= form_for [refinery, :inquiries, @inquiry] do |f| %>
+			      <%= render :partial => "/refinery/admin/error_messages",
+			                 :locals => {
+			                   :object => @inquiry,
+			                   :include_object_name => true
+			                 } %>
+			
+            <div class="span4">
+              <div class="control-group">  
+                <div class="controls">
+					        <%= f.text_field :name, :class => 'input-block-level', :required => 'required',
+					          :placeholder => t('name', :scope => 'activerecord.attributes.refinery/inquiries/inquiry') if Refinery::Inquiries.show_placeholders %>					        
+                </div>  
+              </div>
+
+				      <% if Refinery::Inquiries.show_phone_number_field %>
+              <div class="control-group">  
+                <div class="controls">
+				          <%= f.text_field :phone, :class => 'input-block-level',
+				            :placeholder => t('phone', :scope => 'activerecord.attributes.refinery/inquiries/inquiry') if Refinery::Inquiries.show_placeholders %>
+                </div>  
+              </div>
+				      <% end %>
+
+              <div class="control-group">  
+                <div class="controls">  
+					        <%= f.email_field :email, :class => 'text email', :required => 'required',
+					          :placeholder => t('email', :scope => 'activerecord.attributes.refinery/inquiries/inquiry') if Refinery::Inquiries.show_placeholders %>
+                </div>  
+              </div>
+			       </div><!--End Span4-->
+			
+							 <div class="span8">
+                 <div class="control-group">  
+                   <div class="controls">  
+                     <%= f.text_area :message, :class => "input-block-level", :rows => 8, :required => 'required',
+						          :placeholder => t('message', :scope => 'activerecord.attributes.refinery/inquiries/inquiry') if Refinery::Inquiries.show_placeholders %>  
+                   </div>  
+                 </div>  
+                 <div class="text-right">  
+		  				      <%= f.submit t('.send'), :class => "btn-main" %>
+						        <%= link_to t('.privacy_policy'), "/pages/privacy-policy", :id => "privacy_link" if Refinery::Inquiries.show_contact_privacy_link %>
+                 </div>
+				       </div><!--End Span8-->
+				      
+			       
+
+
+
+						    <% end %>
+						<% end %>
+						<%= render "/refinery/content_page" %>
+    
+    
+    </div><!--End Row-->
+  </div><!--End Container-->
+</section>

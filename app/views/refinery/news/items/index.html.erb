@@ -3,7 +3,7 @@
   <div class="container">
     <div class="row">
       <div class="span12 text-center">
-        <h3>Blog</h3>
+        <h3><%= @page.title %></h3>
       </div>
     </div>
   </div>
@@ -17,56 +17,49 @@
       
       <!--Column One-->
       <div class="span8">
+	
+	
+				<% content_for :body do %>
+				  <%=raw @page.content_for(Refinery::Pages.default_parts.first.to_sym) unless params[:page] %>
+
+				  <% if @items.any? %>
+				    <% @items.each do |item| %>
         
         <!--Blog Post-->
         <article class="blog-post margin-60">
-          <div class="date-container">May <span class="day">28</span></div>
-          <img src="img/pic1.jpg" alt="Title">
-          <h3>Title Will Go Here</h3>
-          <p>Created by <strong><em>Company Name</em></strong></p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><br />
-          <a class="btn-main" href="blog-article.html"><i class="icon-chevron-right"></i> More</a>
+          <h3><%= link_to item.title, refinery.news_item_path(item) %></h3>
+          <p><small><%= t('.published') %> <%= l(item.publish_date, :format => :long) %></small></p>
+          <p><%= truncate  item.body, :length => 200,
+	                      :omission => " ... #{link_to t('.read_more'), refinery.news_item_path(item)}",
+	                      :preserve_html_tags => true %>
+	        </p><br />
+          <%= link_to "Leer Más", refinery.news_item_path(item), class: "btn-main" %>
         </article>
         
-        <!--Blog Post-->
-        <article class="blog-post margin-60">
-          <div class="date-container">Apr <span class="day">18</span></div>
-          <img src="img/pic2.jpg" alt="Title">
-          <h3>Title Will Go Here</h3>
-          <p>Created by <strong><em>Company Name</em></strong></p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><br />
-          <a class="btn-main" href="blog-article.html"><i class="icon-chevron-right"></i> More</a>
-        </article>
-        
-        <!--Blog Post-->
-        <article class="blog-post margin-60">
-          <div class="date-container">Apr <span class="day">04</span></div>
-          <img src="img/pic3.jpg" alt="Title">
-          <h3>Title Will Go Here</h3>
-          <p>Created by <strong><em>Company Name</em></strong></p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><br />
-          <a class="btn-main" href="blog-article.html"><i class="icon-chevron-right"></i> More</a>
-        </article>
+
+				    <% end %>
+
+				    <%= will_paginate @items %>
+				  <% else %>
+				    <p><em><%= t('.no_items_yet') %></em></p>
+				  <% end %>
+				<% end -%>
+
+				<% content_for :body_content_right_prepend do -%>
+				  <%= raw @page.content_for(::Refinery::Pages.default_parts.second.to_sym) %>
+				<% end if ::Refinery::Pages.default_parts.many? -%>
+				<%= render '/refinery/news/shared/body_content_right' %>
+
+				<%= render "/refinery/content_page" %>
+
+
+       
         
       </div><!--End Column One-->
       
       <!--Side Bar-->
       <div class="span4">
-        <form class="margin-20">
-          <input type="text" class="input-block-level" placeholder="Search">
-        </form>
         
-        <br />
-        <h3>Side Bar</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-        
-        <br />
-        <h3>Section Title</h3>
-          <ul class="unstyled side-links">
-            <li><a href="#">Link Here</a></li>
-            <li><a href="#">Link Here</a></li>
-            <li><a href="#">Link Here</a></li>
-          </ul>
                       
       </div>
       
@@ -75,11 +68,6 @@
     <div class="row">
       <div class="span12 text-left">
         <div class="pagination">
-          <ul>
-            <li class="active"><a href="#">1</a></li>
-            <li><a href="#">2</a></li>
-            <li><a href="#">3</a></li>
-          </ul>
         </div>
       </div>
     </div>           
@@ -89,31 +77,3 @@
     
 
 
-<% content_for :body do %>
-  <%=raw @page.content_for(Refinery::Pages.default_parts.first.to_sym) unless params[:page] %>
-
-  <% if @items.any? %>
-    <% @items.each do |item| %>
-      <article class="news_item_truncated">
-        <h2><%= link_to item.title, refinery.news_item_path(item) %></h2>
-        <p>
-          <small><%= t('.published') %> <%= l(item.publish_date, :format => :long) %></small>
-        </p>
-        <%= truncate  item.body, :length => 200,
-                      :omission => " ... #{link_to t('.read_more'), refinery.news_item_path(item)}",
-                      :preserve_html_tags => true %>
-      </article>
-    <% end %>
-
-    <%= will_paginate @items %>
-  <% else %>
-    <p><em><%= t('.no_items_yet') %></em></p>
-  <% end %>
-<% end -%>
-
-<% content_for :body_content_right_prepend do -%>
-  <%= raw @page.content_for(::Refinery::Pages.default_parts.second.to_sym) %>
-<% end if ::Refinery::Pages.default_parts.many? -%>
-<%= render '/refinery/news/shared/body_content_right' %>
-
-<%= render "/refinery/content_page" %>
