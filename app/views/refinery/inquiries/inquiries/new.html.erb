@@ -14,8 +14,7 @@
   <div class="container">
     <div class="row-fluid">
 	
-			<% content_for :body do %>
-			  <%= raw @page.content_for(Refinery::Pages.default_parts.first.to_sym) if Refinery::Pages.default_parts.any? %>
+			  <%= sanitize @page.content_for(Refinery::Pages.default_parts.first.to_sym) if Refinery::Pages.default_parts.any? %>
 
 			    <%= form_for [refinery, :inquiries, @inquiry] do |f| %>
 			      <%= render :partial => "/refinery/admin/error_messages",
@@ -67,8 +66,6 @@
 
 
 						    <% end %>
-						<% end %>
-						<%= render "/refinery/content_page" %>
     
     
     </div><!--End Row-->
