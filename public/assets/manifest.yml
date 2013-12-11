@@ -11,8 +11,8 @@ header1.jpg: header1-13ff1ff89b33b8884150c02ce5e6b39a.jpg
 header1/index.jpg: header1-13ff1ff89b33b8884150c02ce5e6b39a.jpg
 header2.jpg: header2-f7d29fd9a2c4f05c77c388cbef954f9d.jpg
 header2/index.jpg: header2-f7d29fd9a2c4f05c77c388cbef954f9d.jpg
-header3.jpg: header3-d87d6793ba1f3b09f73a8c79e8b4c976.jpg
-header3/index.jpg: header3-d87d6793ba1f3b09f73a8c79e8b4c976.jpg
+header3.jpg: header3-e49e524ba44f41711adf89efae795dd6.jpg
+header3/index.jpg: header3-e49e524ba44f41711adf89efae795dd6.jpg
 latest-news1.jpg: latest-news1-db703c86edbfcc916864a46a93de733e.jpg
 latest-news1/index.jpg: latest-news1-db703c86edbfcc916864a46a93de733e.jpg
 latest-news2.jpg: latest-news2-00d3459e6073943df03162fb7afd78b5.jpg
@@ -53,8 +53,8 @@ testimonial-img.png: testimonial-img-0a58e5555a32e884d32cb9c3ab50f54a.png
 testimonial-img/index.png: testimonial-img-0a58e5555a32e884d32cb9c3ab50f54a.png
 application.js: application-1505fced77bf62e064ee38c5e2283725.js
 application/index.js: application-1505fced77bf62e064ee38c5e2283725.js
-application.css: application-eb11fae25a2c334723d0dd99cdb05070.css
-application/index.css: application-eb11fae25a2c334723d0dd99cdb05070.css
+application.css: application-4ebfa35b04f2266ed206e31d9715bffb.css
+application/index.css: application-4ebfa35b04f2266ed206e31d9715bffb.css
 refinery/blog/icons/add.png: refinery/blog/icons/add-31e0c9c76c23e5a0d5146a7bf7a3381f.png
 refinery/blog/icons/add/index.png: refinery/blog/icons/add-31e0c9c76c23e5a0d5146a7bf7a3381f.png
 refinery/blog/icons/cog.png: refinery/blog/icons/cog-0d700cfe107f46d5dbea17a0ce8b3dda.png
