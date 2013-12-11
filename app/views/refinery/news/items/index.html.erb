@@ -30,7 +30,7 @@
           <h3><%= link_to item.title, refinery.news_item_path(item) %></h3>
           <p><small><%= t('.published') %> <%= l(item.publish_date, :format => :long) %></small></p>
           <p><%= truncate  item.body, :length => 200,
-	                      :omission => " ..., refinery.news_item_path(item)}",
+	                      :omission => " ...",
 	                      :preserve_html_tags => true %>
 	        </p><br />
           <%= link_to "Leer Más", refinery.news_item_path(item), class: "btn-main" %>
