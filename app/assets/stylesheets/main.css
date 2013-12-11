@@ -1422,4 +1422,15 @@ p.lead {
 
 .green{
 	color:#7AC043;
-}	
+}
+
+p img.image-align-left { 
+	float: left; 
+    margin:0 20px 20px 20px; 
+}
+
+p img.image-align-right {
+    float: left; 
+    margin:0 20px 20px 20px; 
+}
+	
