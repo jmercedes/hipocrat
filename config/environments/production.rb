@@ -76,6 +76,7 @@ CmpcV2::Application.configure do
     :domain         => 'heroku.com'
   }
   ActionMailer::Base.delivery_method = :smtp
+  # compile admin assets
   config.assets.precompile += ['refinery/refinery.css']
   
 end
