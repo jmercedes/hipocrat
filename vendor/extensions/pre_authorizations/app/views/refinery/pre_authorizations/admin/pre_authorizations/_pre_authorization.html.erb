@@ -1,0 +1,16 @@
+<li class='clearfix record <%= cycle("on", "on-hover") %>'>
+  <span class='title'>
+    <%= link_to pre_authorization.name, refinery.pre_authorizations_admin_pre_authorization_path(pre_authorization) %> <%= t('.said') %>
+    <span class="preview"><%= truncate(strip_tags(sanitize(pre_authorization.message)), :length => 60) -%></span>
+  </span>
+  <span class='actions'>
+    <%= link_to refinery_icon_tag('delete.png'), refinery.pre_authorizations_admin_pre_authorization_path(pre_authorization),
+                :class => "cancel confirm-delete",
+                :title => t('admin.pre_authorizations.delete'),
+                :'data-confirm' => t('shared.admin.delete.message', :title => pre_authorization.name),
+                :'data-method' => "delete" -%>
+
+    <%= link_to refinery_icon_tag('zoom.png'), refinery.pre_authorizations_admin_pre_authorization_path(pre_authorization),
+                :title => t('.read_pre_authorization') -%>
+  </span>
+</li>

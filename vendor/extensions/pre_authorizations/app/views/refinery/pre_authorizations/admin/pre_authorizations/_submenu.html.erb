@@ -1,0 +1,22 @@
+<div id='actions'>
+  <ul>
+    <% if ::Refinery::PreAuthorizations::Admin::PreAuthorizationsController.searchable? %>
+      <li>
+        <%= render '/refinery/admin/search', :url => refinery.pre_authorizations_admin_pre_authorizations_path %>
+      </li>
+    <% end %>
+    <li <%= "class='selected'" if params[:action] == "index" %>>
+      <%= link_to t('.inbox'), refinery.pre_authorizations_admin_pre_authorizations_path, :class => "email_icon" %>
+    </li>
+    <li>
+      <%= link_to t('.update_notified'),
+                    refinery.edit_pre_authorizations_admin_setting_path(:pre_authorization_notification_recipients, :dialog => true, :height => 300),
+                    :class => "user_comment_icon" %>
+    </li>
+    <li>
+      <%= link_to t('.edit_confirmation_email'),
+                  refinery.edit_pre_authorizations_admin_setting_path(:pre_authorization_confirmation_body, :dialog => true),
+                  :class => "edit_email_icon" %>
+    </li>
+  </ul>
+</div>

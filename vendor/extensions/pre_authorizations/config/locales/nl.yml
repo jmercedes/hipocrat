@@ -1,0 +1,81 @@
+nl:
+  refinery:
+    plugins:
+      pre_authorizations:
+        title: Pre Authorizations
+        description: Contactformulier en beheer van pre authorizations
+    pre_authorizations:
+      pre_authorizations:
+        new:
+          send: Bericht verzenden
+          privacy_policy: Wij respecteren uw privacy
+      admin:
+        pre_authorizations:
+          delete: Deze pre authorization definitief verwijderen
+          pre_authorization:
+            read_pre_authorization: Lees de pre authorization
+            said: zei
+            mark_as_spam: Als spam markeren
+            mark_as_ham: Naar de inbox verplaatsen
+          submenu:
+            inbox: Inbox
+            spam: Spam
+            update_notified: Wijzigen wie op de hoogte wordt gesteld
+            edit_confirmation_email: Bevestigings-e-mail bewerken
+          index:
+            no_pre_authorizations: U heeft nog geen pre authorizations ontvangen.
+          spam:
+            no_spam: Hoera! U heeft geen spam.
+          show:
+            details: Details
+            age: Leeftijd
+            actions: Acties
+            back_to_all_pre_authorizations: Terug naar alle pre authorizations
+            spam: Spam
+            spam_yes: 'ja'
+            pre_authorization: Pre Authorization
+            to: Aan
+            from: Van
+            click_to_email: Klik hier om een e-mail te sturen naar dit adres
+            phone: Telefoonnummer
+            date: Datum
+            message: Bericht
+        settings:
+          notification_recipients_form:
+            settings_value_name: Stuur notificaties naar
+            explanation: "Telkens wanneer iemand het contactformulier invult op uw website, stuurt Refinery een bevestiging naar de verzender."
+            hint: "Wilt u naar meerdere adressen notificaties sturen? Vul dan meerdere e-mailadressen in gescheiden door komma's"
+            example: "Bijvoorbeeld: jan@werk.nl, els@kantoor.nl"
+          confirmation_email_form:
+            to: Aan
+            from: Van
+            subject: Onderwerp
+            click_to_edit_subject: Klik hier om het onderwerp bewerken
+            explanation: "Telkens wanneer iemand het contactformulier invult op uw website, stuurt Refinery een bevestiging naar de verzender."
+            below_edit_email_sent: Hieronder kunt u de email die verzonden wordt bewerken.
+            the_customer_making_pre_authorization: De persoon die de pre authorization heeft ingezonden
+            message: Bericht
+            note: "N.B.: plaats de tekst %name% overal in de email waar u de naam van de klant persoon wilt invoegen"
+      mailer:
+        notification:
+          greeting: Hallo
+          you_recieved_new_pre_authorization: U hebt een nieuwe pre authorization ontvangen via de website.
+          pre_authorization_starts: --- begin van de pre authorization ---
+          pre_authorization_ends: --- einde van de pre authorization ---
+          from: Van
+          email: E-mail
+          phone: Telefoon
+          message: Bericht
+          closing_line: Met vriendelijke groet,
+          ps_html: P.S. Alle pre authorizations worden opgeslagen in de sectie Pre Authorizations van Refinery.
+  activerecord:
+    models:
+      pre_authorization: Pre Authorization
+    attributes:
+      pre_authorization:
+        full_name: Full name
+        email: Email
+        phone: Phone
+        personal_id: Personal
+        insurance: Insurance
+        prescription: Prescription

@@ -66,3 +66,6 @@ gem 'carrierwave'
 gem 'thin'
 gem 'nokogiri'
 gem 'rails_12factor'
+gem 'figaro'
+
+gem 'refinerycms-pre_authorizations', :path => 'vendor/extensions'

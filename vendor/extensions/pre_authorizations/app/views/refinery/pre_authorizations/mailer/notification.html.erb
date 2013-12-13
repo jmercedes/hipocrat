@@ -1,0 +1,19 @@
+<%= t('.greeting') %>,<br/>
+<br/>
+<%= t('.you_recieved_new_pre_authorization') %><br/>
+<br/>
+<%= t('.pre_authorization_starts') %><br/>
+<br/>
+<%= t('.full_name', :default => t('activerecord.attributes.pre_authorization.full_name')) %>: <%= @pre_authorization.full_name %><br/>
+<%= t('.email', :default => t('activerecord.attributes.pre_authorization.email')) %>: <%= @pre_authorization.email %><br/>
+<%= t('.phone', :default => t('activerecord.attributes.pre_authorization.phone')) %>: <%= @pre_authorization.phone %><br/>
+<%= t('.personal_id', :default => t('activerecord.attributes.pre_authorization.personal_id')) %>: <%= @pre_authorization.personal_id %><br/>
+<%= t('.insurance', :default => t('activerecord.attributes.pre_authorization.insurance')) %>: <%= @pre_authorization.insurance %><br/>
+<%= t('.prescription', :default => t('activerecord.attributes.pre_authorization.prescription')) %>: <%= @pre_authorization.prescription %><br/>
+<br/>
+<%= t('.pre_authorization_ends') %><br/>
+<br/>
+<%= t('.closing_line') %>,<br/>
+<%= Refinery::Core.site_name %><br/>
+<br/>
+<%= t('.ps_html') %>

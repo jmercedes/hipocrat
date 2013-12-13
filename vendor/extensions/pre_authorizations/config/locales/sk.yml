@@ -1,0 +1,81 @@
+sk:
+  refinery:
+    plugins:
+      pre_authorizations:
+        title: Pre Authorizations
+        description: Poskytuje kontaktný formulár a zaznamenáva pre authorizations
+    pre_authorizations:
+      pre_authorizations:
+        new:
+          send: Odoslať správu
+          privacy_policy: Chránime vaše súkromie
+      admin:
+        pre_authorizations:
+          delete: Trvalo odstrániť pre authorization
+          pre_authorization:
+            read_pre_authorization: Prečítať pre authorization
+            said: povedal
+            mark_as_spam: Označiť ako spam
+            mark_as_ham: Označiť ako prečítané
+          submenu:
+            inbox: Inbox
+            spam: Spam
+            update_notified: Upraviť zoznam notifikovaných
+            edit_confirmation_email: Upraviť potvrdzovací e-mail
+          index:
+            no_pre_authorizations: Zatiaľ ste neobdržali žiadne pre authorizations.
+          spam:
+            no_spam: Hurá! Nemáte žiaden spam.
+          show:
+            details: Podrobnosti
+            age: Vek
+            actions: Akcie
+            back_to_all_pre_authorizations: Späť na všetky pre authorizations
+            spam: Spam
+            spam_yes: 'áno'
+            pre_authorization: Pre Authorization
+            to: Komu
+            from: Od
+            click_to_email: Kliknite pre odoslanie tejto adresy e-mailom
+            phone: Telefón
+            date: Dátum
+            message: Správa
+        settings:
+          notification_recipients_form:
+            settings_value_name: Poslať upozornenie pre
+            explanation: Zakaždým, keď Vás niekto kontaktuje cez vaše webové stránky, Refinery odošle e-mail s upozornením na nový pre authorization.
+            hint: Keď je odoslaný nový pre authorization, Refinery odošle upozornenie na Váš e-mail.
+            example: "Zadajte e-mailovú adresu(y) ako: jack@work.com, jill@office.com"
+          confirmation_email_form:
+            to: Komu
+            from: Od
+            subject: Predmet
+            click_to_edit_subject: Kliknite tu ak chcete upraviť predmet
+            explanation: Zakaždým, keď Vás niekto kontaktuje cez vaše webové stránky, Refinery odošle e-mail s potvrdením o prijatí odosielateľovi pre authorization.
+            below_edit_email_sent: Nižšie môžete upraviť e-mail, ktorý je odosielaný.
+            the_customer_making_pre_authorization: Klient robiť pre authorization
+            message: Správa
+            note: "Poznámka: umiestniťe text %name%, pre určenie pozície mena klienta v e-maile"
+      mailer:
+        notification:
+          greeting: Ahoj
+          you_recieved_new_pre_authorization: Práve ste obdržali nový pre authorization na vašej webové stránke.
+          pre_authorization_starts: --- pre authorization začiatok ---
+          pre_authorization_ends: --- pre authorization koniec ---
+          from: Od
+          email: E-mail
+          phone: Telefón
+          message: Správa
+          closing_line: S pozdravom
+          ps_html: P.S. Všetky vaše pre authorizations sú uložené v "Pre Authorizations" sekcii v Refinery, ak by ste ich chceli zobraziť neskôr.
+  activerecord:
+    models:
+      pre_authorization: Pre Authorization
+    attributes:
+      pre_authorization:
+        full_name: Full name
+        email: Email
+        phone: Phone
+        personal_id: Personal
+        insurance: Insurance
+        prescription: Prescription

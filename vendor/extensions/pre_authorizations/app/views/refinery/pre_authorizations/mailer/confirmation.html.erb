@@ -1,0 +1,1 @@
+<%= simple_format(strip_tags(Refinery::PreAuthorizations::Setting.confirmation_body.gsub("%name%", @pre_authorization.name))) %>

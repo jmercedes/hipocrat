@@ -1,0 +1,81 @@
+en:
+  refinery:
+    plugins:
+      pre_authorizations:
+        title: Pre Authorizations
+        description: Provides a contact form and stores pre authorizations
+    pre_authorizations:
+      pre_authorizations:
+        new:
+          send: Send message
+          privacy_policy: We value your privacy
+      admin:
+        pre_authorizations:
+          delete: Remove this pre authorization forever
+          pre_authorization:
+            read_pre_authorization: Read the pre authorization
+            said: said
+            mark_as_spam: Mark as spam
+            mark_as_ham: Move to inbox
+          submenu:
+            inbox: Inbox
+            spam: Spam
+            update_notified: Update who gets notified
+            edit_confirmation_email: Edit confirmation email
+          index:
+            no_pre_authorizations: You have not received any pre authorizations yet.
+          spam:
+            no_spam: Hooray! You don't have any spam.
+          show:
+            details: Details
+            age: Age
+            actions: Actions
+            back_to_all_pre_authorizations: Back to all pre authorizations
+            spam: Spam
+            spam_yes: 'yes'
+            pre_authorization: Pre Authorization
+            to: To
+            from: From
+            click_to_email: Click to email this address
+            phone: Phone
+            date: Date
+            message: Message
+        settings:
+          notification_recipients_form:
+            settings_value_name: Send notifications to
+            explanation: Every time someone contacts you on your website, Refinery sends out an email to say there is a new pre authorization.
+            hint: When a new pre authorization is submitted, Refinery will send an email notification to you.
+            example: "Enter your email address(es) like: jack@work.com, jill@office.com"
+          confirmation_email_form:
+            to: To
+            from: From
+            subject: Subject
+            click_to_edit_subject: Click here to edit the subject
+            explanation: Every time someone contacts you on your website, Refinery sends out an email to confirm the pre authorization with the person who made it.
+            below_edit_email_sent: Below you can edit the email that is sent out.
+            the_customer_making_pre_authorization: The customer making the pre authorization
+            message: Message
+            note: "Note: place the text %name% where you'd like the customer's name to appear in the email"
+      mailer:
+        notification:
+          greeting: Hi there
+          you_recieved_new_pre_authorization: You just received a new pre authorization on your website.
+          pre_authorization_starts: --- pre authorization starts ---
+          pre_authorization_ends: --- pre authorization ends ---
+          from: From
+          email: Email
+          phone: Phone
+          message: Message
+          closing_line: Kind Regards
+          ps_html: P.S. All your pre authorizations are stored in the "Pre Authorizations" section of Refinery should you ever want to view it later there.
+  activerecord:
+    models:
+      pre_authorization: Pre Authorization
+    attributes:
+      pre_authorization:
+        full_name: Full name
+        email: Email
+        phone: Phone
+        personal_id: Personal
+        insurance: Insurance
+        prescription: Prescription

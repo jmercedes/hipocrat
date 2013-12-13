@@ -7,6 +7,13 @@ GIT
       refinerycms-core (>= 2.1.0)
       refinerycms-settings (>= 2.1.0)
 
+PATH
+  remote: vendor/extensions
+  specs:
+    refinerycms-pre_authorizations (1.0)
+      refinerycms-core (~> 2.1.0)
+      refinerycms-settings (~> 2.1.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -77,6 +84,9 @@ GEM
     eventmachine (1.0.3)
     excon (0.25.3)
     execjs (2.0.2)
+    figaro (0.7.0)
+      bundler (~> 1.0)
+      rails (>= 3, < 5)
     filters_spam (0.3)
     fog (1.14.0)
       builder
@@ -255,6 +265,7 @@ DEPENDENCIES
   bootstrap-sass
   carrierwave
   coffee-rails (~> 3.2.1)
+  figaro
   fog
   font-awesome-rails
   globalize3 (= 0.3.0)
@@ -269,6 +280,7 @@ DEPENDENCIES
   refinerycms-i18n
   refinerycms-inquiries!
   refinerycms-news (~> 2.1.0)
+  refinerycms-pre_authorizations!
   sass-rails (~> 3.2.3)
   thin
   uglifier (>= 1.0.3)

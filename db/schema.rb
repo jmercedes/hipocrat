@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20131207120449) do
+ActiveRecord::Schema.define(:version => 20131213153344) do
 
   create_table "refinery_images", :force => true do |t|
     t.string   "image_mime_type"
@@ -124,6 +124,22 @@ ActiveRecord::Schema.define(:version => 20131207120449) do
   add_index "refinery_pages", ["lft"], :name => "index_refinery_pages_on_lft"
   add_index "refinery_pages", ["parent_id"], :name => "index_refinery_pages_on_parent_id"
   add_index "refinery_pages", ["rgt"], :name => "index_refinery_pages_on_rgt"
+
+  create_table "refinery_pre_authorizations", :force => true do |t|
+    t.string   "full_name"
+    t.string   "email"
+    t.string   "phone"
+    t.integer  "personal_id_id"
+    t.integer  "insurance_id"
+    t.integer  "prescription_id"
+    t.datetime "created_at",           :null => false
+    t.datetime "updated_at",           :null => false
+    t.string   "identification_image"
+    t.string   "insurance_image"
+    t.string   "prescription_image"
+  end
+
+  add_index "refinery_pre_authorizations", ["id"], :name => "index_refinery_pre_authorizations_on_id"
 
   create_table "refinery_resources", :force => true do |t|
     t.string   "file_mime_type"

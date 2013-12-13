@@ -1,0 +1,81 @@
+pt-BR:
+  refinery:
+    plugins:
+      pre_authorizations:
+        title: Pre Authorizations
+        description: Gerenciar contatos
+    pre_authorizations:
+      pre_authorizations:
+        new:
+          send: Enviar mensagem
+          privacy_policy: "Nós valorizamos sua privacidade"
+      admin:
+        pre_authorizations:
+          delete: Remover esta mensagem para sempre
+          pre_authorization:
+            read_pre_authorization: Ler a mensagem
+            said: disse
+            mark_as_spam: Marcar como spam
+            mark_as_ham: Marcar como segura
+          submenu:
+            inbox: Caixa de Entrada
+            spam: Spam
+            update_notified: Atualizar quem recebe a notificação
+            edit_confirmation_email: Editar email de confirmação
+          index:
+            no_pre_authorizations: "Não exitem mensagens."
+          spam:
+            no_spam: Não existem mensagens de spam.
+          show:
+            details: Detalhes
+            age: Quando
+            actions: Ações
+            back_to_all_pre_authorizations: Voltar para todas as Mensagens
+            spam: Spam
+            spam_yes: 'sim'
+            pre_authorization: Pre Authorization
+            to: Para
+            from: De
+            click_to_email: Clique para enviar email
+            phone: Telefone
+            date: Data
+            message: Mensagem
+        settings:
+          notification_recipients_form:
+            settings_value_name: Enviar notificações para
+            explanation: "Toda vez que alguém contactar você no seu website, enviamos um email para notificar a essa pessoa o recebimento de uma mensagem."
+            hint: "Digite um endereço de email acima. Deseja que a notificação vá para mais de uma pessoa? Digite vários endereços de email separados por vírgulas."
+            example: "Digite os endereços da seguinte forma: eu@dominio.com, amigo@msn.com, colegadetrabalho@trabalho.com"
+          confirmation_email_form:
+            to: Para
+            from: De
+            subject: Assunto
+            click_to_edit_subject: Clique aqui para editar o assunto
+            explanation: "Toda vez que alguém contatar você no seu website, enviamos um email para confirmar o recebimento da mensagem para esta pessoa."
+            below_edit_email_sent: Abaixo você pode editar o texto a ser enviado no e-mail.
+            the_customer_making_pre_authorization: O cliente fazendo o contato
+            message: Mensagem
+            note: "Nota: posicione o texto %name% onde você desejar que o nome do cliente apareça no email."
+      mailer:
+        notification:
+          greeting: Olá
+          you_recieved_new_pre_authorization: Você recebeu um novo contato pelo website.
+          pre_authorization_starts: --- começo da mensagem ---
+          pre_authorization_ends: --- fim da mensagem ---
+          from: De
+          email: Email
+          phone: Telefone
+          message: Mensagem
+          closing_line: Atenciosamente
+          ps_html: OBS. Todos os contatos são armazenados na seção "Contatos" do website.
+  activerecord:
+    models:
+      pre_authorization: Pre Authorization
+    attributes:
+      pre_authorization:
+        full_name: Full name
+        email: Email
+        phone: Phone
+        personal_id: Personal
+        insurance: Insurance
+        prescription: Prescription

@@ -1,0 +1,55 @@
+<!--Content-->
+<section id="page-title">
+  <div class="container">
+    <div class="row">
+      <div class="span12 text-center">
+        <h3><%= @page.title %></h3>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--Content-->      
+<section id="content2">
+  <div class="container">
+    <div class="row-fluid">
+						    <%=raw @page.content_for(Refinery::Pages.default_parts.first.to_sym) %>
+
+						    <%= form_for ([refinery, :pre_authorizations, @pre_authorization]) do |f| %>
+						      <%= render '/refinery/admin/error_messages',
+						                 :object => @pre_authorization,
+						                 :include_object_name => true  %>
+                  
+								 <div class="span6">
+						        <%= f.text_field :full_name, class: "input-block-level", placeholder: "Nombre Completo" %>
+						        <%= f.text_field :email, class: "input-block-level", placeholder: "Correo Electrónico" %>								 	
+						        <%= f.text_field :phone, class: "input-block-level span5", placeholder: "Teléfono" %>
+
+								 </div>
+								<div class="span5">
+					        <%= f.file_field :identification_image %>
+					        <%= f.file_field :insurance_image %>
+					        <%= f.file_field :prescription_image %>									
+								</div> 					
+
+				       <div class="span8">
+	                <div class="text-right">  
+						        <%= f.submit t('.send'), class: "btn-main" %>
+	                </div>
+				       </div><!--End Span8-->
+
+
+						    <% end %>
+						
+    
+            
+			       
+
+    
+    
+    </div><!--End Row-->
+  </div><!--End Container-->
+</section>
+
+
+

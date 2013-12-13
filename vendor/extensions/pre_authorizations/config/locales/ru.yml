@@ -1,0 +1,80 @@
+ru:
+  refinery:
+    plugins:
+      pre_authorizations:
+        title: Pre Authorizations
+    pre_authorizations:
+      pre_authorizations:
+        new:
+          header_message: "Упс. Возникла небольшая проблемка."
+          message: "Нужно исправить следующие ошибки:"
+          send: "Отправить сообщение"
+          privacy_policy: "Мы относимся с уважением к вашим личным данным"
+      admin:
+        pre_authorizations:
+          pre_authorization:
+            move_pre_authorization_to_closed: "Переместить этот запрос в закрытые"
+            move_pre_authorization_to_open: "Переместить этот запрос в открытые"
+            read_pre_authorization: "Прочитать запрос"
+            remove_pre_authorization: "Вы уверены, что хотите удалить запрос от '%{name}'?"
+            title: Pre Authorizations
+            said: "пишет"
+            mark_as_spam: "Пометить как спам"
+            mark_as_ham: "Переместить во Входящие"
+          toggle_status:
+            closed: "Запрос '%{pre_authorization}' закрыт"
+            reopened: "Запрос '%{pre_authorization}' открыт заново"
+          submenu:
+            inbox: "Входящие"
+            spam: "Спам"
+            update_notified: Изменить получателей уведомлений
+            edit_confirmation_email: "Редактировать письмо-подтверждение"
+          index:
+            no_pre_authorizations: "Вы еще не получили ни одного запроса."
+          spam:
+            no_spam: "Ура! Вы не получили спам."
+          show:
+            details: "Подробности"
+            click_to_email: "Нажмите, чтобы отправить"
+            status: "Статус"
+            open: "Открыт"
+            closed: "Закрыт"
+            age: "Срок"
+            actions: "Действия"
+            back_to_all_pre_authorizations: "Назад ко всем запросам"
+            spam: "Спам"
+            spam_yes: 'да'
+            pre_authorization: Pre Authorization
+            title: Pre Authorizations
+        settings:
+          update:
+            updated: "'%{setting}' были успешно обновлены."
+          notification_recipients_form:
+            settings_value_name: "Отправить уведомления"
+            explanation: "Каждый раз, когда кто-то связывается с вами посредством вашего сайта, Refinery CMS отправляет уведомление на электронную почту."
+            hint: "Когда поступит новый запрос, Refinery CMS отправит вам уведомление на электронную почту."
+            example: "Введите адрес(а) электронной почты через запятую: anna@mail.ru, ivanov@yandex.ru"
+          confirmation_email_form:
+            to: "Кому"
+            from: "От"
+            subject: "Тема сообщения"
+            click_to_edit_subject: "Редактировать тему сообщения"
+            explanation: "Каждый раз, когда кто-то связывается с вами посредством вашего сайта, Refinery CMS отправляет ему письмо, подтверждающее принятие запроса."
+            below_edit_email_sent: Ниже вы можете отредактировать отсылаемое письмо
+            the_customer_making_pre_authorization: "Клиент, делающий запрос"
+            message: "Сообщение"
+            note: "Примечание: поместите текст %name% там, где вы хотите, чтобы появилось имя клиента."
+          subject_form:
+            subject_value_name: "Тема сообщения"
+  activerecord:
+    models:
+      pre_authorization: Pre Authorization
+      setting: "Настройки запроса"
+    attributes:
+      pre_authorization:
+        full_name: Full name
+        email: Email
+        phone: Phone
+        personal_id: Personal
+        insurance: Insurance
+        prescription: Prescription
