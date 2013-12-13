@@ -33,38 +33,15 @@
                                                 <tr>
                                                     <td valign="top" style="background-color:#FFFFFF;">
                                                         
-                                                            <h1 style="color:#0088CC;
-																																			 display:block;
-																																			 font-family:Arial;
-																																			 font-size:34px;
-																																			 font-weight:bold;
-																																			 line-height:100%;
-																																			 margin-top:0;
-																																			 margin-right:0;
-																																			 margin-bottom:30px;
-																																			 margin-left:0;
-																																			 text-align:center;"><%= t('.pre_authorization_starts') %></h1>
+                                                            <h1 style="color:#0088CC; display:block; font-family:Arial; font-size:34px; font-weight:bold; line-height:100%; margin-top:0; margin-right:0; margin-bottom:30px; margin-left:0; text-align:center;">
+																														<%= t('.pre_authorization_starts') %></h1>
 
 																														
 
-                                                            <h3 					style="color:#0088CC;
-																																								 display:block;
-																																								 font-family:Arial;
-																																								 font-size:30px;
-																																								 font-weight:bold;
-																																								 line-height:100%;
-																																								 margin-top:0;
-																																								 margin-right:0;
-																																								 margin-bottom:10px;
-																																								 margin-left:0;
-																																								 text-align:center;">
-																																								<%= t('.greeting') %>
-																																								<%= t('.full_name', :default => t('activerecord.attributes.pre_authorization.full_name')) %>: <%= @pre_authorization.full_name %><br/>
+                                                            <h3 style="color:#0088CC; display:block; font-family:Arial; font-size:30px; font-weight:bold; line-height:100%; margin-top:0; margin-right:0;  margin-bottom:10px; margin-left:0;text-align:center;">
+																																								<%= t('.greeting') %> <%= @pre_authorization.full_name %><br/>
 																																								<br/></h3>
-                                                            <p style="font-family:arial;
-																																			color:#666666;
-																																		  text-align:center;
-																															 "><strong style="color:#7BC143;"><%= t('.you_recieved_new_pre_authorization') %></strong>
+                                                            <p style="font-family:arial; color:#666666; text-align:center;"><strong style="color:#7BC143;"><%= t('.you_recieved_new_pre_authorization') %></strong>
 																															<br/>
 																															<br/>
 																															<br/>
@@ -72,7 +49,7 @@
 																														<%= t('.phone', :default => t('activerecord.attributes.pre_authorization.phone')) %>: <%= @pre_authorization.phone %><br/>
 																														<%= t('.personal_id', :default => t('activerecord.attributes.pre_authorization.personal_id')) %>: <%= @pre_authorization.personal_id %><br/>
 																														<%= t('.insurance', :default => t('activerecord.attributes.pre_authorization.insurance')) %>: <%= @pre_authorization.insurance %><br/>
-																														<%= t('.prescription', :default => t('activerecord.attributes.pre_authorization.prescription')) %>: <%= @pre_authorization.prescription %><br/>
+																														<%= t('.prescription', :default => t('activerecord.attributes.pre_authorization.prescription')) %>: <%= @pre_authorization.prescription %><br/><br/><br/><br/>
 																												 <%= t('.pre_authorization_ends') %><br/><br/><br/>
 																												<%= t('.closing_line') %>,<br/> 	
 																													
@@ -83,13 +60,7 @@
                                                 </tr>
                                                 <tr>
                                                 	<td align="center" valign="top" style="padding-top:0;">
-                                                    	<table border="0" cellpadding="15" cellspacing="0" style="
-																																																				-moz-border-radius:3px;
-																																																				-webkit-border-radius:3px;
-																																																				background-color:#336699;
-																																																				border:0;
-																																																				border-collapse:separate !important;
-																																																				border-radius:3px;">
+                                                    	<table border="0" cellpadding="15" cellspacing="0" style="-moz-border-radius:3px; -webkit-border-radius:3px; background-color:#336699; border:0; border-collapse:separate !important; border-radius:3px;">
                                                         </table>
                                                     </td>
                                                 </tr>
@@ -116,7 +87,7 @@
                                             <table border="0" cellpadding="10" cellspacing="0" width="100%">
                                                 <tr>
                                                     <td valign="top"><p style="color:#336699; font-weight:normal; text-align:center; font-size:11px;">
-														<em>Copyright &copy; *|CURRENT_YEAR|*, Todos Los Derechos Reservados, <%= Refinery::Core.site_name %></em>
+														<em>Copyright &copy;, Todos Los Derechos Reservados, <%= Refinery::Core.site_name %></em>
 														<br />
 														<br />
 														<br />
