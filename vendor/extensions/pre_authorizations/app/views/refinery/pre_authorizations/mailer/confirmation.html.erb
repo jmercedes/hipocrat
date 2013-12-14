@@ -1,4 +1,4 @@
-<%= simple_format(strip_tags(Refinery::PreAuthorizations::Setting.confirmation_body.gsub("%name%", @pre_authorization.name))) %>
+<%#= simple_format(strip_tags(Refinery::PreAuthorizations::Setting.confirmation_body.gsub("%name%", @pre_authorization.name))) %>
 
 <body style="margin:0; padding:0; width:100% !important;-webkit-text-size-adjust:none;" leftmargin="0" marginwidth="0" topmargin="0" marginheight="0" offset="0">
 	<center>
@@ -46,7 +46,7 @@
                                                             <p style="font-family:arial; color:#666666; text-align:center;"><strong style="color:#7BC143;">Verde</strong>
 																															<br/>
 																															<br/>
-																															<br/>Cuerpo te texto<br/> 	
+																															<br/>Este correo es un acuse de recibo para confirmar la recepción de su solicitud de pre-autorización, estaremos en contacto con usted a la mayor brevedad posible.<br/><br/><br/>Gracias. 	
 																													
 																													</p>
                                                             <br />
@@ -82,8 +82,7 @@
 														<em>Copyright &copy;, Todos Los Derechos Reservados, <%= Refinery::Core.site_name %></em>
 														<br />
 														<br />
-														<br />
-														Hola</p> 
+														<br /></p> 
                                                     </td>
                                                 </tr>
                                                 <tr>

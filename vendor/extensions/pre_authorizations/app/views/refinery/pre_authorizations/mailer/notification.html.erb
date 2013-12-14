@@ -45,11 +45,20 @@
 																															<br/>
 																															<br/>
 																															<br/>
-																													 	<%= t('.email', :default => t('activerecord.attributes.pre_authorization.email')) %>: <%= @pre_authorization.email %><br/>
-																														<%= t('.phone', :default => t('activerecord.attributes.pre_authorization.phone')) %>: <%= @pre_authorization.phone %><br/>
-																														<%= t('.personal_id', :default => t('activerecord.attributes.pre_authorization.personal_id')) %>: <%= @pre_authorization.personal_id %><br/>
-																														<%= t('.insurance', :default => t('activerecord.attributes.pre_authorization.insurance')) %>: <%= @pre_authorization.insurance %><br/>
-																														<%= t('.prescription', :default => t('activerecord.attributes.pre_authorization.prescription')) %>: <%= @pre_authorization.prescription %><br/><br/><br/><br/>
+																													 	<%= t('.email', :default => t('activerecord.attributes.pre_authorization.email')) %>:
+																														 <%= @pre_authorization.email %>
+																														<br/>
+																														<%= t('.phone', :default => t('activerecord.attributes.pre_authorization.phone')) %>:
+																														 <%= @pre_authorization.phone %><br/>
+                                                                          
+
+																														
+<%= t('.personal_id', :default => t('activerecord.attributes.pre_authorization.personal_id')) %>:
+ <%= link_to "Identificación", @pre_authorization.identification_image %><br/>
+<%= t('.insurance', :default => t('activerecord.attributes.pre_authorization.insurance')) %>:
+ <%= link_to "Seguro Médico", @pre_authorization.insurance_image %><br/>
+<%= t('.prescription', :default => t('activerecord.attributes.pre_authorization.prescription')) %>:
+ <%= link_to "Prescripción Médica", @pre_authorization.prescription_image %><br/><br/><br/><br/>
 																												 <%= t('.pre_authorization_ends') %><br/><br/><br/>
 																												<%= t('.closing_line') %>,<br/> 	
 																													
