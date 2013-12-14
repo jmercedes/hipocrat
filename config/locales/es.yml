@@ -81,7 +81,6 @@ es:
         date: Fecha
         name: Nombre
         message: Mensaje
-es:
   refinery:
     plugins:
       refinerycms_news:
