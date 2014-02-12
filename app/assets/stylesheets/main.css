@@ -194,11 +194,11 @@ a:hover {
   background: #0088CC;
   background-repeat: repeat-x;
   border-color: #0088CC;
-  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff755a', endColorstr='#ff755a', GradientType=0)
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#0088CC', endColorstr='#0088CC', GradientType=0)
 }
 
 .nav-collapse, .nav-collapse.collapse {
-    background: none repeat scroll 0 0 #ff755a;
+    background: none repeat scroll 0 0 #0088CC;
     height: 0;
     overflow: hidden;
 }
@@ -219,7 +219,7 @@ a:hover {
 
 .brand {
   margin-top: 0px;
-  margin-left:8px;
+  margin-left:10px;
 }
 
 .navbar .nav > li > a {
@@ -295,7 +295,7 @@ a:hover {
     background-image: none;
     background-image: -webkit-linear-gradient(linear, 0% 0%, 0% 100%, from(transparent), to(transparent));
     background-repeat: no-repeat;
-    color: #ff755a;
+    color: #0088CC;
     text-decoration: none;
 }
 
@@ -369,12 +369,12 @@ a:hover {
 }
 
 .carousel .item {
-  height: 600px;
+  height: 350px; /*  original 600px  */
 }
 
 
 .one {
-  background: url(planes_preventivos.jpg) no-repeat center center;
+  background: url(header1.jpg) no-repeat center center;
   background-size: cover;
 }
 
@@ -384,7 +384,7 @@ a:hover {
 }
 
 .three {
-  background: url(header3.jpg) no-repeat center center;
+  background: url(planes_preventivos.jpg) no-repeat center center;
   background-size: cover;
 }
 
@@ -395,7 +395,7 @@ a:hover {
   position: static;
   max-width: 900px;
   padding: 0 20px;
-  margin-top: 36%;
+  margin-top: 13%;
 }
 
 
@@ -418,7 +418,7 @@ a:hover {
 
 #page-title {
   background: #ffffff;
-  padding-top: 120px;
+  padding-top: 80px;
   padding-bottom: 40px;
 }
 
@@ -471,7 +471,7 @@ a:hover {
 }
 
 .side-links li a {
-  color: #ff755a;
+  color: #0088CC;
   font-weight: 600;
 }
 
@@ -633,7 +633,7 @@ a:hover {
 }
 
 .team-info {
-  background: #ff755a;
+  background: #7AC043;
   padding: 10px 10px 10px 10px;
   height: 60px;
 }
@@ -687,7 +687,7 @@ a:hover {
 
 
 .headline {
-  background: #ff755a;
+  background: #0088CC;
   padding: 6px 6px 0px 6px;
   background-size: contain;
   position: relative;
@@ -1424,6 +1424,10 @@ p.lead {
 	color:#7AC043;
 }
 
+.bio_title{
+	color:#FFFFFF;
+}
+
 p img.image-align-left { 
 	float: left; 
     margin:0 20px 20px 20px; 
@@ -1433,4 +1437,3 @@ p img.image-align-right {
     float: left; 
     margin:0 20px 20px 20px; 
 }
-	
