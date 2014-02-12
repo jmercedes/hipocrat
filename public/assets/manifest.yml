@@ -7,12 +7,6 @@ glyphicons-halflings.png: glyphicons-halflings-2851b489e8c39f8fad44fc10efb99c3e.
 glyphicons-halflings/index.png: glyphicons-halflings-2851b489e8c39f8fad44fc10efb99c3e.png
 grid_noise.png: grid_noise-4e4c9afe46eb3877508b7255c0562774.png
 grid_noise/index.png: grid_noise-4e4c9afe46eb3877508b7255c0562774.png
-header1.jpg: header1-13ff1ff89b33b8884150c02ce5e6b39a.jpg
-header1/index.jpg: header1-13ff1ff89b33b8884150c02ce5e6b39a.jpg
-header2.jpg: header2-f7d29fd9a2c4f05c77c388cbef954f9d.jpg
-header2/index.jpg: header2-f7d29fd9a2c4f05c77c388cbef954f9d.jpg
-header3.jpg: header3-6dd89d4474c5ad2e414aaad90180aac3.jpg
-header3/index.jpg: header3-6dd89d4474c5ad2e414aaad90180aac3.jpg
 latest-news1.jpg: latest-news1-db703c86edbfcc916864a46a93de733e.jpg
 latest-news1/index.jpg: latest-news1-db703c86edbfcc916864a46a93de733e.jpg
 latest-news2.jpg: latest-news2-00d3459e6073943df03162fb7afd78b5.jpg
@@ -27,6 +21,10 @@ logo_cmpc.png: logo_cmpc-ba8fe9981c68ba7d4bd99816dc97a67a.png
 logo_cmpc/index.png: logo_cmpc-ba8fe9981c68ba7d4bd99816dc97a67a.png
 logo_gr.png: logo_gr-78efd7d493b229c92f801e3a6ace2b5d.png
 logo_gr/index.png: logo_gr-78efd7d493b229c92f801e3a6ace2b5d.png
+odontologia.jpg: odontologia-6dd89d4474c5ad2e414aaad90180aac3.jpg
+odontologia/index.jpg: odontologia-6dd89d4474c5ad2e414aaad90180aac3.jpg
+oftalmologia.jpg: oftalmologia-f7d29fd9a2c4f05c77c388cbef954f9d.jpg
+oftalmologia/index.jpg: oftalmologia-f7d29fd9a2c4f05c77c388cbef954f9d.jpg
 pic1.jpg: pic1-c55fd04d1f8971942be9220e5dec70c0.jpg
 pic1/index.jpg: pic1-c55fd04d1f8971942be9220e5dec70c0.jpg
 pic2.jpg: pic2-3947d77eef2d0efa39bac5bc1f5afd95.jpg
@@ -53,8 +51,8 @@ testimonial-img.png: testimonial-img-0a58e5555a32e884d32cb9c3ab50f54a.png
 testimonial-img/index.png: testimonial-img-0a58e5555a32e884d32cb9c3ab50f54a.png
 application.js: application-1505fced77bf62e064ee38c5e2283725.js
 application/index.js: application-1505fced77bf62e064ee38c5e2283725.js
-application.css: application-16a2076673ad9e52fe3f38f5522d85b1.css
-application/index.css: application-16a2076673ad9e52fe3f38f5522d85b1.css
+application.css: application-0ed1a6caf2befa19c948f7942eb90104.css
+application/index.css: application-0ed1a6caf2befa19c948f7942eb90104.css
 refinery/blog/icons/add.png: refinery/blog/icons/add-31e0c9c76c23e5a0d5146a7bf7a3381f.png
 refinery/blog/icons/add/index.png: refinery/blog/icons/add-31e0c9c76c23e5a0d5146a7bf7a3381f.png
 refinery/blog/icons/cog.png: refinery/blog/icons/cog-0d700cfe107f46d5dbea17a0ce8b3dda.png
