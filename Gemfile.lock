@@ -10,14 +10,11 @@ GIT
 PATH
   remote: vendor/extensions
   specs:
-<<<<<<< HEAD
-    refinerycms-job_posts (1.0)
-      refinerycms-core (~> 2.1.0)
-=======
     refinerycms-job_inquiries (1.0)
       refinerycms-core (~> 2.1.0)
       refinerycms-settings (~> 2.1.0)
->>>>>>> job_inquiry
+    refinerycms-job_posts (1.0)
+      refinerycms-core (~> 2.1.0)
     refinerycms-pre_authorizations (1.0)
       refinerycms-core (~> 2.1.0)
       refinerycms-settings (~> 2.1.0)
@@ -287,11 +284,8 @@ DEPENDENCIES
   refinerycms-blog (~> 2.1.0)
   refinerycms-i18n
   refinerycms-inquiries!
-<<<<<<< HEAD
-  refinerycms-job_posts!
-=======
   refinerycms-job_inquiries!
->>>>>>> job_inquiry
+  refinerycms-job_posts!
   refinerycms-news (~> 2.1.0)
   refinerycms-pre_authorizations!
   sass-rails (~> 3.2.3)
