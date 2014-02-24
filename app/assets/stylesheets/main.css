@@ -410,7 +410,7 @@ a:hover {
 }
 
 #content2 {
-  background: url(../img/grid_noise.png) repeat;
+  background: url(grid_noise.png) repeat;
   background-color: #ebebeb;
   padding-top: 120px;
   padding-bottom: 120px;
@@ -1438,10 +1438,55 @@ p img.image-align-right {
     margin:0 20px 20px 20px; 
 }
 
-ul .job_post_index {
-	list-style-type:none !important;
+
+.job_post_list{
+	color:#7AC043;
+	list-style-type:none;
+	border-top:solid 1px #afafaf;
+	border-bottom:solid 1px #afafaf;
+	
+ 
 }
 
-.greenk{
-	color:#1546AA;
+.apply_for_job_button {
+	margin:30px;
 }
+
+/*
+.job_post_list li:nth-of-type(odd) {
+  background-color:#f8f8f8;
+}
+
+*/
+
+.job_position_title h1{
+  font-family: 'Open Sans', sans-serif;
+	font-size:24px;
+	color:#0088CC;
+  font-weight: 400;
+	text-shadow:none;
+	padding: 20px 20px 0 20px;
+
+}
+
+.job_position_title h1 a{
+	color:#7AC043;
+
+}
+
+.job_position_title p{
+	padding:0 20px 0 20px;
+	
+}
+
+/*
+h1 {
+  font-weight: 800;
+  font-size: 62px;
+  line-height: 60px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin: 0;
+  text-shadow: 0 1px 1px rgba(0,0,0,.4);
+}
+*/

@@ -1,45 +1,27 @@
-<% content_for :body_content_title do %>
-  <%= @job_post.position %>
-<% end %>
+<section id="page-title">
+  <div class="container">
+    <div class="row">
+      <div class="span12 text-center">
+        <h3><%= @page.title %></h3>
+      </div>
+    </div>
+  </div>
+</section>
 
-<% content_for :body do %>
-  <section>
-    <h1>Position</h1>
-    <p>
-      <%=raw @job_post.position %>
-    </p>
-  </section>
-  <section>
-    <h1>Description</h1>
-    <p>
-      <%=raw @job_post.description %>
-    </p>
-  </section>
-  <section>
-    <h1>Opening Date</h1>
-    <p>
-      <%=raw @job_post.opening_date %>
-    </p>
-  </section>
-  <section>
-    <h1>Closing Date</h1>
-    <p>
-      <%=raw @job_post.closing_date %>
-    </p>
-  </section>
-<% end %>
+<!--Content-->
+<section id="content2">
+  <div class="container">
+		<div class="row">
+			<div class="span12">
 
-<% content_for :side_body do %>
-  <aside>
-    <h2><%= t('.other') %></h2>
-    <ul id="job_posts">
-      <% @job_posts.each do |job_post| %>
-        <li>
-          <%= link_to job_post.position, refinery.job_posts_job_post_path(job_post) %>
-        </li>
-      <% end %>
-    </ul>
-  </aside>
-<% end %>
+						<h3 class="lead"><%= @job_post.position %></h3>
+						<p><%= raw @job_post.description %></p>
 
-<%= render '/refinery/content_page' %>
+		</div>
+		<div class="span12 apply_for_job_button">
+			<p><%= link_to "Aplica para esta posición", "#", class: "btn-main" %></p>
+			
+		</div>      
+  </div>
+</div>
+</section>
