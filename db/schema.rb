@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20131213153344) do
+ActiveRecord::Schema.define(:version => 20140224175851) do
 
   create_table "refinery_images", :force => true do |t|
     t.string   "image_mime_type"
@@ -35,6 +35,27 @@ ActiveRecord::Schema.define(:version => 20131213153344) do
   end
 
   add_index "refinery_inquiries_inquiries", ["id"], :name => "index_refinery_inquiries_inquiries_on_id"
+
+  create_table "refinery_job_inquiries", :force => true do |t|
+    t.string   "full_name"
+    t.string   "email"
+    t.string   "phone"
+    t.string   "resume"
+    t.string   "how_did_you_know"
+    t.datetime "created_at",       :null => false
+    t.datetime "updated_at",       :null => false
+  end
+
+  add_index "refinery_job_inquiries", ["id"], :name => "index_refinery_job_inquiries_on_id"
+
+  create_table "refinery_job_posts", :force => true do |t|
+    t.string   "position"
+    t.text     "description"
+    t.datetime "opening_date"
+    t.datetime "closing_date"
+    t.datetime "created_at",   :null => false
+    t.datetime "updated_at",   :null => false
+  end
 
   create_table "refinery_news_item_translations", :force => true do |t|
     t.integer  "refinery_news_item_id"

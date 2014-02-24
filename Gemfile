@@ -69,3 +69,4 @@ gem 'rails_12factor'
 gem 'figaro'
 
 gem 'refinerycms-pre_authorizations', :path => 'vendor/extensions'
+gem 'refinerycms-job_inquiries', :path => 'vendor/extensions'

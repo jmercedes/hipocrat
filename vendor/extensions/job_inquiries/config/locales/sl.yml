@@ -1,0 +1,69 @@
+sl:
+  refinery:
+    plugins:
+      job_inquiries:
+        title: Job Inquiries
+    job_inquiries:
+      job_inquiries:
+        new:
+          header_message: "Ups prišlo je do majhnega problema"
+          message: "Prosimo odpravite sledeče napake:"
+          send: Pošlji sporočilo
+          privacy_policy: "Cenimo vašo zasebnost"
+      admin:
+        job_inquiries:
+          job_inquiry:
+            said: pravi
+            move_job_inquiry_to_closed: Premakni povpraševanje v zaprto
+            move_job_inquiry_to_open: Premakni povpraševanje v odprto
+            read_job_inquiry: Preberi povpraševanje
+            remove_job_inquiry: "Ali ste prepričani da želite odstraniti povpraševanje od '%{name}'?"
+            title: Job Inquiries
+          toggle_status:
+            closed: "Povpraševanje '%{job_inquiry}' je zaprto"
+            reopened: "Povpraševanje '%{job_inquiry}' je ponovno odprto"
+          index:
+            no_job_inquiries: Trenutno še ni nobenega povpraševanja.
+          submenu:
+            update_notified: Uredi prejemnike obvestila
+            edit_confirmation_email: Uredni potrditveni email
+          show:
+            details: Podrobnosti
+            click_to_email: Pošlji email sporočilo
+            status: Status
+            open: Odprto
+            closed: Zaprto
+            age: Starost
+            actions: Možnosti
+            back_to_all_job_inquiries: Nazaj na vsa povpraševanja
+            job_inquiry: Job Inquiry
+        settings:
+          update:
+            updated: "'%{setting}' je bila uspešno posodobljena."
+          notification_recipients_form:
+            settings_value_name: Pošlji obvestilo na
+            explanation: "Vedno ko vas nekdo kontaktira na vaši spletni strani, vam Refinery pošlje email obvestilo o novem povpraševanju."
+            hint: "V zgornje polje vnesite email naslov. Želite da obvestila prejme več oseb? Vnesite več email naslovov ločenih z vejicami."
+            example: "Primer: jaz@domena.com, prijatelj@msn.com, sodelavec@work.com"
+          confirmation_email_form:
+            to: Za
+            from: Od
+            subject: Zadeva
+            click_to_edit_subject: Uredi zadevo
+            explanation: "Vedno ko vas nekdo kontaktira na vaši spletni strani mu Refinery pošlje email obvestilo o prejetem povpraševanju."
+            below_edit_email_sent: Spodaj lahko uredite vsebino email sporočila.
+            the_customer_making_job_inquiry: Stranka, ki je poslala povpraševanje
+            message: Sporočilo
+            note: "Opomba: vstavite tekst %name% kjer želite, da se pojavi ime stranke v email sporočilu."
+          subject_form:
+            subject_value_name: Zadeva
+  activerecord:
+    models:
+      job_inquiry: Job Inquiry
+    attributes:
+      job_inquiry:
+        full_name: Full name
+        email: Email
+        phone: Phone
+        resume: Resume
+        how_did_you_know: How did you know

@@ -1,0 +1,22 @@
+<div id='actions'>
+  <ul>
+    <% if ::Refinery::JobInquiries::Admin::JobInquiriesController.searchable? %>
+      <li>
+        <%= render '/refinery/admin/search', :url => refinery.job_inquiries_admin_job_inquiries_path %>
+      </li>
+    <% end %>
+    <li <%= "class='selected'" if params[:action] == "index" %>>
+      <%= link_to t('.inbox'), refinery.job_inquiries_admin_job_inquiries_path, :class => "email_icon" %>
+    </li>
+    <li>
+      <%= link_to t('.update_notified'),
+                    refinery.edit_job_inquiries_admin_setting_path(:job_inquiry_notification_recipients, :dialog => true, :height => 300),
+                    :class => "user_comment_icon" %>
+    </li>
+    <li>
+      <%= link_to t('.edit_confirmation_email'),
+                  refinery.edit_job_inquiries_admin_setting_path(:job_inquiry_confirmation_body, :dialog => true),
+                  :class => "edit_email_icon" %>
+    </li>
+  </ul>
+</div>

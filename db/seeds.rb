@@ -16,3 +16,5 @@ Refinery::News::Engine.load_seed
 Refinery::Inquiries::Engine.load_seed
 
 Refinery::PreAuthorizations::Engine.load_seed
+
+Refinery::JobInquiries::Engine.load_seed
