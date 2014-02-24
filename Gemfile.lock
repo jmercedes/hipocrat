@@ -10,8 +10,14 @@ GIT
 PATH
   remote: vendor/extensions
   specs:
+<<<<<<< HEAD
     refinerycms-job_posts (1.0)
       refinerycms-core (~> 2.1.0)
+=======
+    refinerycms-job_inquiries (1.0)
+      refinerycms-core (~> 2.1.0)
+      refinerycms-settings (~> 2.1.0)
+>>>>>>> job_inquiry
     refinerycms-pre_authorizations (1.0)
       refinerycms-core (~> 2.1.0)
       refinerycms-settings (~> 2.1.0)
@@ -164,7 +170,7 @@ GEM
       rake (>= 0.8.7)
       rdoc (~> 3.4)
       thor (>= 0.14.6, < 2.0)
-    rake (10.1.0)
+    rake (10.1.1)
     rdoc (3.12.2)
       json (~> 1.4)
     refinerycms (2.1.0)
@@ -281,7 +287,11 @@ DEPENDENCIES
   refinerycms-blog (~> 2.1.0)
   refinerycms-i18n
   refinerycms-inquiries!
+<<<<<<< HEAD
   refinerycms-job_posts!
+=======
+  refinerycms-job_inquiries!
+>>>>>>> job_inquiry
   refinerycms-news (~> 2.1.0)
   refinerycms-pre_authorizations!
   sass-rails (~> 3.2.3)

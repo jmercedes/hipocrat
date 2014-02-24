@@ -1,0 +1,76 @@
+<div id='records'>
+  <h2><%= t('.job_inquiry') %></h2>
+  <table id='job_inquiry' class='inquiry'>
+      <tr>
+        <td>
+          <strong>
+            <%= t('.full_name', :default => t('activerecord.attributes.job_inquiry.full_name')) %>
+          </strong>
+        </td>
+        <td>
+          <%= @job_inquiry.full_name %>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <strong>
+            <%= t('.email', :default => t('activerecord.attributes.job_inquiry.email')) %>
+          </strong>
+        </td>
+        <td>
+          <%= @job_inquiry.email %>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <strong>
+            <%= t('.phone', :default => t('activerecord.attributes.job_inquiry.phone')) %>
+          </strong>
+        </td>
+        <td>
+          <%= @job_inquiry.phone %>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <strong>
+            <%= t('.resume', :default => t('activerecord.attributes.job_inquiry.resume')) %>
+          </strong>
+        </td>
+        <td>
+          <%= @job_inquiry.resume %>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <strong>
+            <%= t('.how_did_you_know', :default => t('activerecord.attributes.job_inquiry.how_did_you_know')) %>
+          </strong>
+        </td>
+        <td>
+          <%= @job_inquiry.how_did_you_know %>
+        </td>
+      </tr>
+  </table>
+</div>
+<div id='actions'>
+  <h2><%= t('.details')%></h2>
+  <p>
+    <strong><%= t('.age') %>:</strong> <%= time_ago_in_words(@job_inquiry.created_at) %>
+  </p>
+  <h2><%= t('.actions') %></h2>
+  <ul>
+    <li>
+      <%= link_to t('.back_to_all_job_inquiries'), refinery.url_for(:action => 'index'),
+                   :class => "back_icon" %>
+    </li>
+    <li>
+      <%= link_to t('delete', :scope => 'refinery.job_inquiries.admin.job_inquiries'),
+                  refinery.job_inquiries_admin_job_inquiry_path(@job_inquiry),
+                  :class => 'delete_icon no-tooltip confirm-delete',
+                  :title => t('delete', :scope => 'refinery.job_inquiries.admin.job_inquiries'),
+                  :'data-confirm' => t('message', :scope => 'refinery.admin.delete', :title => @job_inquiry.name),
+                  :'data-method' => "delete" %>
+    </li>
+  </ul>
+</div>

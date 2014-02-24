@@ -1,0 +1,80 @@
+en:
+  refinery:
+    plugins:
+      job_inquiries:
+        title: Job Inquiries
+        description: Provides a contact form and stores job inquiries
+    job_inquiries:
+      job_inquiries:
+        new:
+          send: Send message
+          privacy_policy: We value your privacy
+      admin:
+        job_inquiries:
+          delete: Remove this job inquiry forever
+          job_inquiry:
+            read_job_inquiry: Read the job inquiry
+            said: said
+            mark_as_spam: Mark as spam
+            mark_as_ham: Move to inbox
+          submenu:
+            inbox: Inbox
+            spam: Spam
+            update_notified: Update who gets notified
+            edit_confirmation_email: Edit confirmation email
+          index:
+            no_job_inquiries: You have not received any job inquiries yet.
+          spam:
+            no_spam: Hooray! You don't have any spam.
+          show:
+            details: Details
+            age: Age
+            actions: Actions
+            back_to_all_job_inquiries: Back to all job inquiries
+            spam: Spam
+            spam_yes: 'yes'
+            job_inquiry: Job Inquiry
+            to: To
+            from: From
+            click_to_email: Click to email this address
+            phone: Phone
+            date: Date
+            message: Message
+        settings:
+          notification_recipients_form:
+            settings_value_name: Send notifications to
+            explanation: Every time someone contacts you on your website, Refinery sends out an email to say there is a new job inquiry.
+            hint: When a new job inquiry is submitted, Refinery will send an email notification to you.
+            example: "Enter your email address(es) like: jack@work.com, jill@office.com"
+          confirmation_email_form:
+            to: To
+            from: From
+            subject: Subject
+            click_to_edit_subject: Click here to edit the subject
+            explanation: Every time someone contacts you on your website, Refinery sends out an email to confirm the job inquiry with the person who made it.
+            below_edit_email_sent: Below you can edit the email that is sent out.
+            the_customer_making_job_inquiry: The customer making the job inquiry
+            message: Message
+            note: "Note: place the text %name% where you'd like the customer's name to appear in the email"
+      mailer:
+        notification:
+          greeting: Hi there
+          you_recieved_new_job_inquiry: You just received a new job inquiry on your website.
+          job_inquiry_starts: --- job inquiry starts ---
+          job_inquiry_ends: --- job inquiry ends ---
+          from: From
+          email: Email
+          phone: Phone
+          message: Message
+          closing_line: Kind Regards
+          ps_html: P.S. All your job inquiries are stored in the "Job Inquiries" section of Refinery should you ever want to view it later there.
+  activerecord:
+    models:
+      job_inquiry: Job Inquiry
+    attributes:
+      job_inquiry:
+        full_name: Full name
+        email: Email
+        phone: Phone
+        resume: Resume
+        how_did_you_know: How did you know

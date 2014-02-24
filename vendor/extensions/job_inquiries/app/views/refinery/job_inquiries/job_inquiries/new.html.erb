@@ -1,0 +1,49 @@
+<!--Content-->
+<section id="page-title">
+  <div class="container">
+    <div class="row">
+      <div class="span12 text-center">
+        <h3>Carrera en Centro Médico Punta Cana</h3>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--Content-->      
+<section id="content2">
+  <div class="container">
+    <div class="row-fluid">
+    
+        <%=raw @page.content_for(Refinery::Pages.default_parts.first.to_sym) %>
+
+					
+        <div class="span12">
+        	
+		    <%= form_for [refinery, :job_inquiries, @job_inquiry] do |f| %>
+		      <%= render '/refinery/admin/error_messages',
+		                 :object => @job_inquiry,
+		                 :include_object_name => true  %>
+            
+			        <%= f.text_field :full_name, :placeholder => "Nombre completo", :class => "span4" %><br>
+			        <%= f.text_field :email, :placeholder => "Correo electrónico", :class => "span4" %><br>
+			        <%= f.text_field :phone, :placeholder => "Teléfono", :class => "span4" %>
+
+		        <%= f.label :how_did_you_know, "¿Cómo te enteraste sobre esta vacante?" %>
+		        <%= f.select :how_did_you_know, Refinery::JobInquiries::JobInquiry::HOW_DID_YOU_KNOWS,
+		                      :include_blank => true %>
+
+
+		        <%= f.label :resume, "Envíanos tu hoja de vida" %>
+		        <%= f.file_field :resume %>
+
+
+		      <div class='actions'>
+		        <%= f.submit "Enviar", :class => "btn-main" %>
+		      </div>
+        </div>
+					<% end %>
+    
+    
+    </div><!--End Row-->
+  </div><!--End Container-->
+</section>
