@@ -1,0 +1,31 @@
+es:
+  refinery:
+    plugins:
+      job_posts:
+        title: Job Posts
+#        article: masculino/femenino
+    job_posts:
+      admin:
+        job_posts:
+          actions:
+            create_new: Crear nuevo job post
+            reorder: Reordenar job posts
+            reorder_done: Reordenación de job posts completada
+          records:
+            title: Job Posts
+            sorry_no_results: Lo siento, no hay resultados
+            no_items_yet: No hay job posts todavía. Pulsa en "Crear nuevo Job Post" para crear tu primer job post.
+          job_post:
+            view_live_html: Ver este job post como abierto al público <br/><em>(abre en ventana nueva)</em>
+            edit: Editar este job post
+            delete: Borrar este job post para siempre
+      job_posts:
+        show:
+          other: Otros job posts
+  activerecord:
+    attributes:
+      'refinery/job_posts/job_post':
+        position: Position
+        description: Description
+        opening_date: Opening Date
+        closing_date: Closing Date

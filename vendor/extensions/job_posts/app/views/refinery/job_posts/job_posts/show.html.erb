@@ -1,0 +1,45 @@
+<% content_for :body_content_title do %>
+  <%= @job_post.position %>
+<% end %>
+
+<% content_for :body do %>
+  <section>
+    <h1>Position</h1>
+    <p>
+      <%=raw @job_post.position %>
+    </p>
+  </section>
+  <section>
+    <h1>Description</h1>
+    <p>
+      <%=raw @job_post.description %>
+    </p>
+  </section>
+  <section>
+    <h1>Opening Date</h1>
+    <p>
+      <%=raw @job_post.opening_date %>
+    </p>
+  </section>
+  <section>
+    <h1>Closing Date</h1>
+    <p>
+      <%=raw @job_post.closing_date %>
+    </p>
+  </section>
+<% end %>
+
+<% content_for :side_body do %>
+  <aside>
+    <h2><%= t('.other') %></h2>
+    <ul id="job_posts">
+      <% @job_posts.each do |job_post| %>
+        <li>
+          <%= link_to job_post.position, refinery.job_posts_job_post_path(job_post) %>
+        </li>
+      <% end %>
+    </ul>
+  </aside>
+<% end %>
+
+<%= render '/refinery/content_page' %>

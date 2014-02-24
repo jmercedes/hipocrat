@@ -1,0 +1,30 @@
+cs:
+  refinery:
+    plugins:
+      job_posts:
+        title: Job Posts
+    job_posts:
+      admin:
+        job_posts:
+          actions:
+            create_new: Přidat Job Post
+            reorder: Řadit Job Posts
+            reorder_done: Konec řazení Job Posts
+          records:
+            title: Job Posts
+            sorry_no_results: Litujeme, ale nebyly nalezny žádné výsledky.
+            no_items_yet: Zatím nebyly vytvořeny žádné Job Posts. Zvolte "Přidat Job Post" pro přidání prvního job post.
+          job_post:
+            view_live_html: Zobrazit náhled job post<br/><em>(otevře se v novém okně)</em>
+            edit: Upravit job post
+            delete: Smazat job post
+      job_posts:
+        show:
+          other: Další Job Posts
+  activerecord:
+    attributes:
+      'refinery/job_posts/job_post':
+        position: Position
+        description: Description
+        opening_date: Opening Date
+        closing_date: Closing Date

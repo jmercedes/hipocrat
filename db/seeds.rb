@@ -16,3 +16,6 @@ Refinery::News::Engine.load_seed
 Refinery::Inquiries::Engine.load_seed
 
 Refinery::PreAuthorizations::Engine.load_seed
+
+# Added by Refinery CMS JobPosts extension
+Refinery::JobPosts::Engine.load_seed

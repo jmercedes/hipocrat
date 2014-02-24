@@ -1,0 +1,193 @@
+<!--Content-->
+<section id="content2">
+  <div class="container">
+			<div class="span12">
+
+		<% content_for :body do %>
+		  <ul class="job_post_index greenk">
+		    <% @job_posts.each do |job_post| %>
+		      <li>Juan
+		        <%= link_to job_post.position, refinery.job_posts_job_post_path(job_post) %>
+		      </li>
+		    <% end %>
+		  </ul>
+		<% end %>
+
+		<%= render '/refinery/content_page' %>
+		</div>      
+  </div>
+</section>
+
+
+
+
+======
+
+
+
+<section id="content1">
+  <div class="container">
+    <div class="row">
+      <div class="span12">
+				<p><%= @page.title %></p>
+				<%= raw @page.content_for(:body) %>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!--Content-->
+<section id="content1">
+  <div class="container">
+    <div class="row margin-40">
+      <div class="span12">
+        <h3>Full Width</h3>
+        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+    </div>
+    
+    <div class="row margin-40">
+      <div class="span8">
+        <h3>Section Title</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+      
+      <div class="span4">
+        <h3>Section Title</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in.</p>
+      </div>
+    </div>
+    
+    <div class="row margin-40">
+      <div class="span2">
+        <h3>Section</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+      </div>
+      
+      <div class="span2">
+        <h3>Section</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+      </div>
+      
+      <div class="span2">
+        <h3>Section</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+      </div>
+      
+      <div class="span6">
+        <h3>Section</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+      </div>
+    </div>
+    
+  </div>
+</section>
+
+<!--Twitter Feed-->
+<section id="twitter">
+  <div class="container">
+    <div class="row">
+      <div class="span12 text-center">
+        <i class="icon-twitter icon-4x gray margin-20"></i>
+          <div class="twitter-feed">
+  					<ul id="twitter_update_list" class="rotate"></ul>
+  				</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<% content_for :body do %>
+  <ul id="job_posts">
+    <% @job_posts.each do |job_post| %>
+      <li>
+        <%= link_to job_post.position, refinery.job_posts_job_post_path(job_post) %>
+      </li>
+    <% end %>
+  </ul>
+<% end %>
+
+<%= render '/refinery/content_page' %>
+
+<!--Content-->      
+<section id="content2">
+  <div class="container">
+    <div class="row">
+      
+      <!--Column One-->
+      <div class="span8">
+        
+        <!--Blog Post-->
+        <article class="blog-post margin-60">
+          <div class="date-container">May <span class="day">28</span></div>
+          <img src="img/pic1.jpg" alt="Title">
+          <h3>Title Will Go Here</h3>
+          <p>Created by <strong><em>Company Name</em></strong></p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><br />
+          <a class="btn-main" href="blog-article.html"><i class="icon-chevron-right"></i> More</a>
+        </article>
+        
+        <!--Blog Post-->
+        <article class="blog-post margin-60">
+          <div class="date-container">Apr <span class="day">18</span></div>
+          <img src="img/pic2.jpg" alt="Title">
+          <h3>Title Will Go Here</h3>
+          <p>Created by <strong><em>Company Name</em></strong></p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><br />
+          <a class="btn-main" href="blog-article.html"><i class="icon-chevron-right"></i> More</a>
+        </article>
+        
+        <!--Blog Post-->
+        <article class="blog-post margin-60">
+          <div class="date-container">Apr <span class="day">04</span></div>
+          <img src="img/pic3.jpg" alt="Title">
+          <h3>Title Will Go Here</h3>
+          <p>Created by <strong><em>Company Name</em></strong></p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><br />
+          <a class="btn-main" href="blog-article.html"><i class="icon-chevron-right"></i> More</a>
+        </article>
+        
+      </div><!--End Column One-->
+      
+      <!--Side Bar-->
+      <div class="span4">
+        <form class="margin-20">
+          <input type="text" class="input-block-level" placeholder="Search">
+        </form>
+        
+        <br />
+        <h3>Side Bar</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+        
+        <br />
+        <h3>Section Title</h3>
+          <ul class="unstyled side-links">
+            <li><a href="#">Link Here</a></li>
+            <li><a href="#">Link Here</a></li>
+            <li><a href="#">Link Here</a></li>
+          </ul>
+                      
+      </div>
+      
+    </div><!--End Row-->
+    
+    <div class="row">
+      <div class="span12 text-left">
+        <div class="pagination">
+          <ul>
+            <li class="active"><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>           
+             
+  </div>
+</section>
+                      

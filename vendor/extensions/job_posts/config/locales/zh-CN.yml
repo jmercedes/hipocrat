@@ -1,0 +1,32 @@
+zh-CN:
+  refinery:
+    plugins:
+      job_posts:
+        title: Job Posts
+    job_posts:
+      admin:
+        job_posts:
+          actions:
+            create_new: 建立新的 Job Post
+            reorder: 对 Job Posts 重新排序
+            reorder_done: 对 Job Posts 的重新排序结束
+          records:
+            title: Job Posts
+            sorry_no_results: 对不起，未找到结果。 #Sorry! There are no results found.
+
+            # There are no Job Posts yet. Click "Add New Job Post" to add your first job post.
+            no_items_yet: 目前没有 Job Posts . 点击 "Add New Job Post" 创建一个job post.
+          job_post:
+            view_live_html: 查看 job post 的最新内容.<br/><em>(新窗口中打开)</em>
+            edit: 编辑 job post
+            delete: 永久删除 job post
+      job_posts:
+        show:
+          other: 其他 Job Posts
+  activerecord:
+    attributes:
+      'refinery/job_posts/job_post':
+        position: Position
+        description: Description
+        opening_date: Opening Date
+        closing_date: Closing Date

@@ -1,0 +1,30 @@
+it:
+  refinery:
+    plugins:
+      job_posts:
+        title: Job Posts
+    job_posts:
+      admin:
+        job_posts:
+          actions:
+            create_new: Aggiungi Nuovo Job Post
+            reorder: Riordina Job Posts
+            reorder_done: Termina il Riordino di Job Posts
+          records:
+            title: Job Posts
+            sorry_no_results: "Spiacenti! Nessun risultato trovato"
+            no_items_yet: Non ci sono ancora Job Posts. Clicca "Aggiungi Nuovo Job Post" per aggiungere il tuo primo job post.
+          job_post:
+            view_live_html: Guarda live questo job post <br/><em>(apre una nuova finestra)</em>
+            edit: Modifica questo job post
+            delete: Rimuovi per sempre questo job post
+      job_posts:
+        show:
+          other: Altri Job Posts
+  activerecord:
+    attributes:
+      'refinery/job_posts/job_post':
+        position: Position
+        description: Description
+        opening_date: Opening Date
+        closing_date: Closing Date

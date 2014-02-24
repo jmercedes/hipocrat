@@ -1,0 +1,30 @@
+tr:
+  refinery:
+    plugins:
+      job_posts:
+        title: Job Posts
+    job_posts:
+      admin:
+        job_posts:
+          actions:
+            create_new: Yeni Ekle Job Post
+            reorder: Tekrar sirala Job Posts
+            reorder_done: Tekrar siralama tamamlandiJob Posts
+          records:
+            title: Job Posts
+            sorry_no_results: Uzgunum! Herhangi bir sonuc bulunamadi.
+            no_items_yet: Herhangi bir Job Posts yok henuz.  Tikla "Yeni Ekle Job Post" eklemek senin ilk job post.
+          job_post:
+            view_live_html: Bunu canlu job post goruntule <br/><em>(yeni bir pencerede acar)</em>
+            edit: Bunu Duzenle job post
+            delete: Bunu Sil job post sonsuza dek
+      job_posts:
+        show:
+          other: Diger Job Posts
+  activerecord:
+    attributes:
+      'refinery/job_posts/job_post':
+        position: Position
+        description: Description
+        opening_date: Opening Date
+        closing_date: Closing Date

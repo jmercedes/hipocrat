@@ -1,0 +1,30 @@
+nb:
+  refinery:
+    plugins:
+      job_posts:
+        title: Job Posts
+    job_posts:
+      admin:
+        job_posts:
+          actions:
+            create_new: Lag en ny Job Post
+            reorder: Endre rekkefølgen på Job Posts
+            reorder_done: Ferdig å endre rekkefølgen Job Posts
+          records:
+            title: Job Posts
+            sorry_no_results: Beklager! Vi fant ikke noen resultater.
+            no_items_yet: Det er ingen Job Posts enda. Klikk på "Lag en ny Job Post" for å legge til din første job post.
+          job_post:
+            view_live_html: Vis hvordan denne job post ser ut offentlig <br/><em>(åpner i et nytt vindu)</em>
+            edit: Rediger denne job post
+            delete: Fjern denne job post permanent
+      job_posts:
+        show:
+          other: Andre Job Posts
+  activerecord:
+    attributes:
+      'refinery/job_posts/job_post':
+        position: Position
+        description: Description
+        opening_date: Opening Date
+        closing_date: Closing Date

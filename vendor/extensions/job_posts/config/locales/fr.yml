@@ -1,0 +1,30 @@
+fr:
+  refinery:
+    plugins:
+      job_posts:
+        title: Job Posts
+    job_posts:
+      admin:
+        job_posts:
+          actions:
+            create_new: Créer un(e) nouve(au/l/lle) Job Post
+            reorder: Réordonner les Job Posts
+            reorder_done: Fin de réordonnancement des Job Posts
+          records:
+            title: Job Posts
+            sorry_no_results: "Désolé ! Aucun résultat."
+            no_items_yet: 'Il n''y a actuellement aucun(e) Job Post. Cliquer sur "Créer un(e) nouve(au/l/lle) Job Post" pour créer votre premi(er/ère) job post.'
+          job_post:
+            view_live_html: Voir ce(t/tte) job post <br/><em>(Ouvre une nouvelle fenêtre)</em>
+            edit: Modifier ce(t/tte) job post
+            delete: Supprimer définitivement ce(t/tte) job post
+      job_posts:
+        show:
+          other: Autres Job Posts
+  activerecord:
+    attributes:
+      'refinery/job_posts/job_post':
+        position: Position
+        description: Description
+        opening_date: Opening Date
+        closing_date: Closing Date

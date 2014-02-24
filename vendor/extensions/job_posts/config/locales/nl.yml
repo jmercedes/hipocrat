@@ -1,0 +1,30 @@
+nl:
+  refinery:
+    plugins:
+      job_posts:
+        title: Job Posts
+    job_posts:
+      admin:
+        job_posts:
+          actions:
+            create_new: Nieuwe Job Post toevoegen
+            reorder: De volgorde van de Job Posts wijzigen
+            reorder_done: Klaar met het wijzingen van de van de Job Post-volgorde
+          records:
+            title: Job Posts
+            sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
+            no_items_yet: Er zijn nog geen Job Posts. Druk op 'Nieuwe Job Post toevoegen' om de eerste toe te voegen.
+          job_post:
+            view_live_html: Deze job post op de website bekijken <br/><em>(opent in een nieuw venster)</em>
+            edit: Bewerk deze job post
+            delete: Deze job post definitief verwijderen
+      job_posts:
+        show:
+          other: Andere Job Posts
+  activerecord:
+    attributes:
+      'refinery/job_posts/job_post':
+        position: Position
+        description: Description
+        opening_date: Opening Date
+        closing_date: Closing Date

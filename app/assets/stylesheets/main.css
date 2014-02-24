@@ -1437,3 +1437,11 @@ p img.image-align-right {
     float: left; 
     margin:0 20px 20px 20px; 
 }
+
+ul .job_post_index {
+	list-style-type:none !important;
+}
+
+.greenk{
+	color:#1546AA;
+}
