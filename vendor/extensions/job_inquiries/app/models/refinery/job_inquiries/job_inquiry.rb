@@ -4,6 +4,8 @@ module Refinery
       self.table_name = 'refinery_job_inquiries'
 
       attr_accessible :full_name, :email, :phone, :resume, :how_did_you_know, :position
+      
+      mount_uploader :resume, ImageUploader
 
       # def message was created automatically because you didn't specify a text field
       # when you ran the refinery:form generator. <3 <3 Refinery CMS.
