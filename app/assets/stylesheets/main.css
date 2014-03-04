@@ -1438,12 +1438,13 @@ p img.image-align-right {
     margin:0 20px 20px 20px; 
 }
 
+/* JOB POST  */
 
 .job_post_list{
 	color:#7AC043;
 	list-style-type:none;
-	border-top:solid 1px #afafaf;
-	border-bottom:solid 1px #afafaf;
+/*	border-top:solid 1px #afafaf;
+	border-bottom:solid 1px #afafaf; */
 	
  
 }
