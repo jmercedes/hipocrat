@@ -1,0 +1,55 @@
+<!--Content-->
+<section id="page-title">
+  <div class="container">
+    <div class="row">
+      <div class="span12 text-center">
+        <h3><%= @page.title %></h3>
+      </div>
+    </div>
+  </div>
+</section>
+  
+  
+<!--Content-->      
+<section id="content2">
+  <div class="container">
+    <div class="row">
+      
+      <!--Column One-->
+      <div class="span8">
+				
+				<%= raw @page.content_for(Refinery::Pages.default_parts.first.to_sym) if Refinery::Pages.default_parts.any? %>
+
+			  <% if @posts.any? %>
+			    <section id="blog_posts">
+			      <%= render :partial => "/refinery/blog/shared/post", :collection => @posts %>
+			      <%= will_paginate @posts %>
+			    </section>
+			  <% else %>
+			    <p><%= t('.no_blog_articles_yet') %></p>
+			  <% end %>
+			  
+        
+        
+        
+        
+      </div><!--End Column One-->
+      
+      <!--Side Bar-->
+      <div class="span4">
+      </div>
+      
+    </div><!--End Row-->
+    
+             
+  </div>
+</section>
+    
+
+
+
+
+<% content_for :side_body_prepend do -%>
+  <%= raw @page.content_for(Refinery::Pages.default_parts.second.to_sym) %>
+<% end if Refinery::Pages.default_parts.many? -%>
+<%= render '/refinery/blog/shared/body_content_right' %>

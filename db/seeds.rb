@@ -20,3 +20,6 @@ Refinery::PreAuthorizations::Engine.load_seed
 Refinery::JobPosts::Engine.load_seed
 
 Refinery::JobInquiries::Engine.load_seed
+
+# Added by Refinery CMS Blog engine
+Refinery::Blog::Engine.load_seed
