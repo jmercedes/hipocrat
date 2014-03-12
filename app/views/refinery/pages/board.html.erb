@@ -28,7 +28,7 @@
           <div class="row-fluid text-center">
             <div class="span12 pull-left team-info">
               <% name_position = child.title.split("|") %>
-					    <p class="bio_title"><strong><%= name_position[0] %></strong> | <span><%= name_position[1] %></span></p>
+					    <p class="bio_title"><strong><%= link_to name_position[0], child.url %></strong> | <span><%= name_position[1] %></span></p>
             </div>
           
           </div>

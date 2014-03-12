@@ -413,7 +413,7 @@ a:hover {
 }
 
 #content2 {
-  background: url(grid_noise.png) repeat;
+  /* background: url(grid_noise.png) repeat; */
   background-color: #ebebeb;
   padding-top: 120px;
   padding-bottom: 120px;
