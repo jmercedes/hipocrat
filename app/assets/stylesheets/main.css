@@ -358,7 +358,7 @@ a:hover {
     font-size: 22px;
     font-weight: bold;
     height: 40px;
-    margin-top: 50px;
+    margin-top: 150px;
     text-shadow: 0 0px 0px rgba(0, 0, 0, 0.0);
     z-index: 10;
     opacity: 1;
@@ -374,7 +374,7 @@ a:hover {
 
 
 .one {
-  background: url(planes_preventivos.jpg) no-repeat center center;
+  background: url(bioscan.jpg) no-repeat center center;
   background-size: cover;
 }
 
@@ -388,14 +388,17 @@ a:hover {
   background-size: cover;
 }
 
-
+.carousel h1{
+	font-size:48px;
+	color:#0088CC;
+}
 
 .carousel-caption {
   background-color: transparent;
   position: static;
-  max-width: 900px;
+  max-width: 500px;
   padding: 0 20px;
-  margin-top: 16%;
+  margin-top: 18%;
 }
 
 
