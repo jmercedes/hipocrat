@@ -388,6 +388,12 @@ a:hover {
   background-size: cover;
 }
 
+.four {
+  background: url(aniversario_slide.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+
 .carousel h1{
 	font-size:48px;
 	color:#0088CC;
