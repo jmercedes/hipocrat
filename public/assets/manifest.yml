@@ -1,4 +1,6 @@
 ---
+aniversario_slide.jpg: aniversario_slide-3fb54da29d4f818bd3addd93943061a1.jpg
+aniversario_slide/index.jpg: aniversario_slide-3fb54da29d4f818bd3addd93943061a1.jpg
 bg_direction_nav.png: bg_direction_nav-3c36224a76ddbcac2e36b643832074cf.png
 bg_direction_nav/index.png: bg_direction_nav-3c36224a76ddbcac2e36b643832074cf.png
 bioscan.jpg: bioscan-7d47df0009306082332a1fdc995c95b9.jpg
@@ -55,8 +57,8 @@ vacantes_disponibles.jpg: vacantes_disponibles-d28315c651297d37654ff43c47f8358f.
 vacantes_disponibles/index.jpg: vacantes_disponibles-d28315c651297d37654ff43c47f8358f.jpg
 application.js: application-1505fced77bf62e064ee38c5e2283725.js
 application/index.js: application-1505fced77bf62e064ee38c5e2283725.js
-application.css: application-6dee6f23065b1ba553cedde77cc5f71f.css
-application/index.css: application-6dee6f23065b1ba553cedde77cc5f71f.css
+application.css: application-48ec02c936f213b271721e2dd2257e77.css
+application/index.css: application-48ec02c936f213b271721e2dd2257e77.css
 refinery/blog/icons/add.png: refinery/blog/icons/add-31e0c9c76c23e5a0d5146a7bf7a3381f.png
 refinery/blog/icons/add/index.png: refinery/blog/icons/add-31e0c9c76c23e5a0d5146a7bf7a3381f.png
 refinery/blog/icons/cog.png: refinery/blog/icons/cog-0d700cfe107f46d5dbea17a0ce8b3dda.png
