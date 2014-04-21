@@ -46,15 +46,16 @@ gem 'jquery-rails'
 # To use debugger
 # gem 'debugger'
 
-gem 'globalize3', '0.3.0'
+gem 'globalize', '3.1.0'
+gem 'friendly_id', '4.0.10.1'
 
 # Refinery CMS
-gem 'refinerycms', '~> 2.1.0'
+gem 'refinerycms', '~> 2.1.2'
 
 # Optionally, specify additional Refinery CMS Extensions here:
 gem 'refinerycms-acts-as-indexed', '~> 1.0.0'
 gem 'refinerycms-blog', '~> 2.1.0'
-gem 'refinerycms-inquiries', :git => 'git://github.com/refinery/refinerycms-inquiries.git'
+gem 'refinerycms-inquiries', '2.1.0'
 gem 'refinerycms-news', '~> 2.1.0'
 gem 'refinerycms-i18n'
 

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20140310182623) do
+ActiveRecord::Schema.define(:version => 20140421202349) do
 
   create_table "refinery_blog_categories", :force => true do |t|
     t.string   "title"
@@ -143,10 +143,11 @@ ActiveRecord::Schema.define(:version => 20140310182623) do
     t.datetime "created_at",            :null => false
     t.datetime "updated_at",            :null => false
     t.string   "source"
+    t.string   "slug"
   end
 
   add_index "refinery_news_item_translations", ["locale"], :name => "index_refinery_news_item_translations_on_locale"
-  add_index "refinery_news_item_translations", ["refinery_news_item_id"], :name => "index_refinery_news_item_translations_on_refinery_news_item_id"
+  add_index "refinery_news_item_translations", ["refinery_news_item_id"], :name => "index_refinery_news_item_translations_fk"
 
   create_table "refinery_news_items", :force => true do |t|
     t.string   "title"

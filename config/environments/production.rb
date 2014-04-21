@@ -50,31 +50,33 @@ CmpcV2::Application.configure do
 
   # Disable delivery errors, bad email addresses will be ignored
   if config.respond_to?(:action_mailer)
-    # config.action_mailer.raise_delivery_errors = false
+  if config.respond_to?(:action_mailer)
+      # config.action_mailer.raise_delivery_errors = false
+    end
+
+    # Enable threaded mode
+    # config.threadsafe!
+
+    # Enable locale fallbacks for I18n (makes lookups for any locale fall back to
+    # the I18n.default_locale when a translation can not be found)
+    config.i18n.fallbacks = true
+
+    # Send deprecation notices to registered listeners
+    config.active_support.deprecation = :notify
+
+    # Log the query plan for queries taking more than this (works
+    # with SQLite, MySQL, and PostgreSQL)
+    # config.active_record.auto_explain_threshold_in_seconds = 0.5
+    
+    ActionMailer::Base.smtp_settings = {
+      :address        => 'smtp.sendgrid.net',
+      :port           => '587',
+      :authentication => :plain,
+      :user_name      => ENV['SENDGRID_USERNAME'],
+      :password       => ENV['SENDGRID_PASSWORD'],
+      :domain         => 'heroku.com'
+    }
   end
-
-  # Enable threaded mode
-  # config.threadsafe!
-
-  # Enable locale fallbacks for I18n (makes lookups for any locale fall back to
-  # the I18n.default_locale when a translation can not be found)
-  config.i18n.fallbacks = true
-
-  # Send deprecation notices to registered listeners
-  config.active_support.deprecation = :notify
-
-  # Log the query plan for queries taking more than this (works
-  # with SQLite, MySQL, and PostgreSQL)
-  # config.active_record.auto_explain_threshold_in_seconds = 0.5
-  
-  ActionMailer::Base.smtp_settings = {
-    :address        => 'smtp.sendgrid.net',
-    :port           => '587',
-    :authentication => :plain,
-    :user_name      => ENV['SENDGRID_USERNAME'],
-    :password       => ENV['SENDGRID_PASSWORD'],
-    :domain         => 'heroku.com'
-  }
   ActionMailer::Base.delivery_method = :smtp
   # compile admin assets
   config.assets.precompile += ['refinery/refinery.css']
