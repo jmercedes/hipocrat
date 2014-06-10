@@ -72,3 +72,5 @@ gem 'figaro'
 gem 'refinerycms-pre_authorizations', :path => 'vendor/extensions'
 gem 'refinerycms-job_posts', :path => 'vendor/extensions'
 gem 'refinerycms-job_inquiries', :path => 'vendor/extensions'
+
+gem 'statsmix'
