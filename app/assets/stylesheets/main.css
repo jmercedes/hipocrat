@@ -388,8 +388,15 @@ a:hover {
   background-size: cover;
 }
 
+/*
 .four {
   background: url(aniversario_slide.jpg) no-repeat center center;
+  background-size: cover;
+}
+*/
+
+.four {
+  background: url(odontologia.jpg) no-repeat center center;
   background-size: cover;
 }
 
