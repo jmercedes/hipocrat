@@ -389,6 +389,11 @@ a:hover {
 }
 
 .four {
+  background: url(odontologia.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+.five {
   background: url(octubre.jpg) no-repeat center center;
   background-size: cover;
 }
