@@ -388,13 +388,6 @@ a:hover {
   background-size: cover;
 }
 
-/*
-.four {
-  background: url(aniversario_slide.jpg) no-repeat center center;
-  background-size: cover;
-}
-*/
-
 .four {
   background: url(odontologia.jpg) no-repeat center center;
   background-size: cover;
@@ -404,7 +397,6 @@ a:hover {
   background: url(octubre-mes-del-cancer-de-mama.jpg) no-repeat center center;
   background-size: cover;
 }
-
 
 
 .carousel h1{
