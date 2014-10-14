@@ -398,6 +398,11 @@ a:hover {
   background-size: cover;
 }
 
+.one_mobile {
+  background: url(octubre_mobile.jpg) no-repeat center center;
+  background-size: cover;
+}
+
 
 .carousel h1{
 	font-size:48px;

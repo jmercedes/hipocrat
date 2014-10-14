@@ -1,5 +1,9 @@
 
+<% if mobile_device? %>
+	<%= raw @page.content_for(:slideshow_mobile) %>
+<% else %>
+	<%= raw @page.content_for(:slideshow) %>
+<% end %> 
 
-<%= raw @page.content_for(:slideshow) %> 
 <%= raw @page.content_for(:home_services) %>
 <%= raw @page.content_for(:staff_medico) %>
