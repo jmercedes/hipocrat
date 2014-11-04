@@ -398,8 +398,15 @@ a:hover {
   background-size: cover;
 }
 
+
+.six {
+  background: url(mes_diabetes.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+
 .one_mobile {
-  background: url(octubre_mobile.jpg) no-repeat center center;
+  background: url(mes_diabetes_mobile.jpg) no-repeat center center;
   background-size: cover;
 }
 
