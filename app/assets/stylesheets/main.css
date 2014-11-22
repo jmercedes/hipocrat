@@ -404,9 +404,13 @@ a:hover {
   background-size: cover;
 }
 
+.seven {
+  background: url(prevencion_vih.jpg) no-repeat center center;
+  background-size: cover;
+}
 
 .one_mobile {
-  background: url(mes_diabetes_mobile.jpg) no-repeat center center;
+  background: url(noviembre_mobile.jpg) no-repeat center center;
   background-size: cover;
 }
 
