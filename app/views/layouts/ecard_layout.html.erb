@@ -1,0 +1,54 @@
+                                                                          <!DOCTYPE html>
+<%= render "/refinery/html_tag" %>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <title>Centro Médico Punta Cana</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width">
+  
+
+
+  <!-- Fav and touch icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/apple-touch-icon-114-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/apple-touch-icon-72-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" href="/apple-touch-icon-57-precomposed.png">
+  <link rel="shortcut icon" href="/favicon.png">
+	<%= render "/refinery/head" %>
+</head>
+
+<body>
+	
+  
+ 		<%= yield %>
+    
+    <!--Bottom Section-->
+    <section id="bottom">
+      <div class="container">
+        <div class="row margin-40">
+          <div class="span10 offset1 text-center">
+            <p> Av. España s/n Edificio Centro Médico Punta Cana Bávaro, Código Postal: 23000, República Dominicana. Teléfono: 809.552.1506 </p>
+            <hr>
+						<%= link_to "Vacantes disponibles", "/job_posts", :class => "white" %>
+						| <%= link_to "Trabaja con nosotros", "/trabaja-con-nosotros--2", :class => "white" %>
+          </div>
+        </div>
+        
+        
+      </div>
+    </section>
+    
+    
+    <section id="footer">
+      <div class="container">
+        <div class="row">
+          <div class="span12 text-center">
+						<%= render "/refinery/footer" -%>
+          </div>
+        </div>
+      </div>
+    </section>
+      
+    <%= render "/refinery/javascripts" %>
+    </body>
+</html>
