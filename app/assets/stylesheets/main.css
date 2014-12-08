@@ -342,7 +342,9 @@ a:hover {
 
 .carousel {
   margin-bottom: 0px;
-  background: #31363a;
+/*  background: #31363a;
+*/	
+	background:#f2daae;
 }
 
 .carousel .container {
