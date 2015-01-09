@@ -416,6 +416,18 @@ a:hover {
   background-size: cover;
 }
 
+.eight {
+  background: url(resultados_online.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+.eight_mobile {
+  background: url(resultados_online_mobile.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+
+
 
 .carousel h1{
 	font-size:48px;
