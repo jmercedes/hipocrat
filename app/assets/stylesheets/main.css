@@ -1542,3 +1542,8 @@ h1 {
 		width:100%;
 		top:0;
 }
+
+.navbar-inner {
+	padding-left:260px !important;
+}
+	
