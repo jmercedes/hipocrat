@@ -1546,4 +1546,7 @@ h1 {
 .navbar-inner {
 	padding-left:260px !important;
 }
+
+.navbar .nav {
+margin: 0 10px 0 242px !important;
 	
