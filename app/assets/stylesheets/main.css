@@ -19,10 +19,10 @@ h1, h2, h3, h4, h5, h6, p {
 
 h1 {
   font-weight: 800;
-  font-size: 62px;
+  font-size: 40px;
   line-height: 60px;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: #0088CC;
   margin: 0;
   text-shadow: 0 1px 1px rgba(0,0,0,.4);
 }
@@ -220,6 +220,12 @@ a:hover {
 .brand {
   margin-top: 0px;
   margin-left:10px;
+	background: url(logo_gr_blanco.png) no-repeat;
+	width: 131px;
+	height: 83px;
+	text-indent: -999px;
+	padding-left: 20px;
+  
 }
 
 .navbar .nav > li > a {
@@ -342,9 +348,7 @@ a:hover {
 
 .carousel {
   margin-bottom: 0px;
-/*  background: #31363a;
-*/	
-	background:#f2daae;
+  background: #F2DAAE;
 }
 
 .carousel .container {
@@ -360,7 +364,7 @@ a:hover {
     font-size: 22px;
     font-weight: bold;
     height: 40px;
-    margin-top: 150px;
+    margin-top: 50px;
     text-shadow: 0 0px 0px rgba(0, 0, 0, 0.0);
     z-index: 10;
     opacity: 1;
@@ -371,75 +375,38 @@ a:hover {
 }
 
 .carousel .item {
-  height: 600px; /*  original 600px  */
+  height: 350px; /*  original 600px  */
 }
 
 
 .one {
-  background: url(bioscan.jpg) no-repeat center center;
+  background: url(header1.jpg) no-repeat center center;
   background-size: cover;
 }
 
 .two {
-  background: url(oftalmologia.jpg) no-repeat center center;
+  background: url(house_calls.jpg) no-repeat center center;
   background-size: cover;
 }
 
 .three {
-  background: url(fisioterapia.jpg) no-repeat center center;
+  background: url(planes_preventivos.jpg) no-repeat center center;
   background-size: cover;
 }
 
 .four {
-  background: url(odontologia.jpg) no-repeat center center;
-  background-size: cover;
-}
-
-.five {
-  background: url(octubre.jpg) no-repeat center center;
+  background: url(aniversario_slide.jpg) no-repeat center center;
   background-size: cover;
 }
 
 
-.six {
-  background: url(mes_diabetes.jpg) no-repeat center center;
-  background-size: cover;
-}
-
-.seven {
-  background: url(prevencion_vih.jpg) no-repeat center center;
-  background-size: cover;
-}
-
-.one_mobile {
-  background: url(noviembre_mobile.jpg) no-repeat center center;
-  background-size: cover;
-}
-
-.eight {
-  background: url(resultados_online.jpg) no-repeat center center;
-  background-size: cover;
-}
-
-.eight_mobile {
-  background: url(resultados_online_mobile.jpg) no-repeat center center;
-  background-size: cover;
-}
-
-
-
-
-.carousel h1{
-	font-size:48px;
-	color:#0088CC;
-}
 
 .carousel-caption {
   background-color: transparent;
   position: static;
-  max-width: 500px;
+  max-width: 900px;
   padding: 0 20px;
-  margin-top: 18%;
+  margin-top: 13%;
 }
 
 
@@ -454,7 +421,7 @@ a:hover {
 }
 
 #content2 {
-  /* background: url(grid_noise.png) repeat; */
+  background: url(../img/grid_noise.png) repeat;
   background-color: #ebebeb;
   padding-top: 120px;
   padding-bottom: 120px;
@@ -1480,69 +1447,4 @@ p img.image-align-left {
 p img.image-align-right {
     float: left; 
     margin:0 20px 20px 20px; 
-}
-
-/* JOB POST  */
-
-.job_post_list{
-	color:#7AC043;
-	list-style-type:none;
-/*	border-top:solid 1px #afafaf;
-	border-bottom:solid 1px #afafaf; */
-	
- 
-}
-
-.apply_for_job_button {
-	margin:30px;
-}
-
-/*
-.job_post_list li:nth-of-type(odd) {
-  background-color:#f8f8f8;
-}
-
-*/
-
-.job_position_title h1{
-  font-family: 'Open Sans', sans-serif;
-	font-size:24px;
-	color:#0088CC;
-  font-weight: 400;
-	text-shadow:none;
-	padding: 20px 20px 0 20px;
-
-}
-
-.job_position_title h1 a{
-	color:#7AC043;
-
-}
-
-.job_position_title p{
-	padding:0 20px 0 20px;
-	
-}
-
-/*
-h1 {
-  font-weight: 800;
-  font-size: 62px;
-  line-height: 60px;
-  text-transform: uppercase;
-  color: #FFFFFF;
-  margin: 0;
-  text-shadow: 0 1px 1px rgba(0,0,0,.4);
-}
-*/
-
-.header-vacantes{
-  	background: url(vacantes_disponibles.jpg) no-repeat top center;
-		height:200px;
-		width:100%;
-		top:0;
-}
-
-.navbar-inner {
-	padding-left:260px !important;
 }
