@@ -348,7 +348,7 @@ a:hover {
 
 .carousel {
   margin-bottom: 0px;
-  background: #F2DAAE;
+  background: #FFF;
 }
 
 .carousel .container {
@@ -396,6 +396,16 @@ a:hover {
 
 .four {
   background: url(aniversario_slide.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+.eight {
+  background: url(resultados_online.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+.eight_mobie {
+  background: url(resultados_online_mobile.jpg) no-repeat center center;
   background-size: cover;
 }
 
@@ -1447,4 +1457,13 @@ p img.image-align-left {
 p img.image-align-right {
     float: left; 
     margin:0 20px 20px 20px; 
+}
+
+
+.navbar .nav {
+position: relative;
+left: 0;
+display: block;
+float: left;
+margin: 0 10px 0 110px;
 }
