@@ -21,18 +21,15 @@
 		<div class="row">
 			<div class="span12">
 
-		  <ul class="job_post_list">
 		    <% @job_posts.each do |job_post| %>
-		      <li class="job_position_title">
-						<h1><%= link_to job_post.position, refinery.job_posts_job_post_path(job_post) %></h1>
+						
+						<h3><%= link_to job_post.position, refinery.job_posts_job_post_path(job_post) %></h3>
 							<p><%= truncate job_post.description, :length => 100,
 							 																			 :omission => "...",
 																										 :preserve_html_tags => true %>
 						 </p>
-					</li>
 					<hr>
 		    <% end %>
-		  </ul>
 
 		</div>      
   </div>
