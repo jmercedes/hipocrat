@@ -219,12 +219,12 @@ a:hover {
 
 .brand {
   margin-top: 0px;
-  margin-left:10px;
+  margin-left:0;
 	background: url(logo_gr_blanco.png) no-repeat;
 	width: 131px;
 	height: 83px;
 	text-indent: -999px;
-	padding-left: 20px;
+	padding-left: 9px;
   
 }
 
@@ -375,7 +375,7 @@ a:hover {
 }
 
 .carousel .item {
-  height: 400px; /*  original 600px  */
+  height: 500px; /*  original 600px  */
 }
 
 
